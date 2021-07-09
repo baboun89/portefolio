@@ -24,24 +24,54 @@ ul li {
 
 }
 
-img {
-    display: block;
+#book {
+
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+}
+
+#logo1 {
+        display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+   
+}
+
+#logo2 {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 10%;
+    bottom: 10px;
+    z-index: 4;
+}
+#logo3{
+    z-index: 6;
+    position: relative;
+    left: 70%;
+    top:50px
 }
 
 h2 {
     margin-top: 50px;
-    color: white;
+    color: blue;
 }
 
 h3 {
     margin-top: 0;
     margin-bottom: 0;
-    color: white;
+    color: blue;
     padding: 0px;
     font-family: cursive;
     font-size: 40px;
     font-weight: 100;
+}
 
+h2,
+h3 {
+    position: relative;
+    z-index: 5;
 }
