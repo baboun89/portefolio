@@ -50,9 +50,9 @@ ul li {
 }
 #logo3{
     z-index: 6;
-    position: relative;
+    position: absolute;
     left: 70%;
-    top:50px
+    bottom: 100px;
 }
 
 h2 {
