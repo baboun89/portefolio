@@ -6,7 +6,7 @@ header {
 }
 
 body {
-    background: radial-gradient(closest-side, #12AEF3, #09577A);
+    background: radial-gradient(closest-side, white, #09577A);
     height: 500px;
 }
 
@@ -51,8 +51,10 @@ ul li {
 #logo3{
     z-index: 6;
     position: absolute;
-    left: 70%;
-    bottom: 100px;
+    height: 200px;
+    width: 200px;
+    left: -80px;
+    top: -50px;
 }
 
 h2 {
