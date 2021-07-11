@@ -27,7 +27,7 @@ ul li {
 #book {
 
     height: 200px;
-    width: 200px;
+    width: 160px;
     position: absolute;
     left: 50%;
     z-index: 5;
@@ -44,8 +44,8 @@ ul li {
     height: 400px;
     width: 400px;
     position: absolute;
-    left: 10%;
-    bottom: 10px;
+    left: 30%;
+    bottom: -35px;
     z-index: 4;
 }
 #logo3{
@@ -57,13 +57,13 @@ ul li {
 
 h2 {
     margin-top: 50px;
-    color: blue;
+    color: white;
 }
 
 h3 {
     margin-top: 0;
     margin-bottom: 0;
-    color: blue;
+    color: white;
     padding: 0px;
     font-family: cursive;
     font-size: 40px;
