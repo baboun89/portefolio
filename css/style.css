@@ -34,10 +34,10 @@ ul li {
 }
 
 #logo1 {
-        display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
 
 #logo2 {
@@ -48,7 +48,8 @@ ul li {
     bottom: -35px;
     z-index: 4;
 }
-#logo3{
+
+#logo3 {
     z-index: 6;
     position: absolute;
     height: 200px;
@@ -76,4 +77,7 @@ h2,
 h3 {
     position: relative;
     z-index: 5;
+}
+
+@media screen and (max-height:350) {
 }
