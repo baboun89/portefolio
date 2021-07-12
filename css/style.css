@@ -1,7 +1,7 @@
 /* mobile */
 :root {
     font-size: 11px;
-    --color1: rgb(252, 252, 45);
+    --color1: white;
     --color2: #09577A;
     --color3: #1D87F2;
     --color4: #040B50;
@@ -43,10 +43,12 @@ ul li {
     z-index: 5;
 }
 #lo{
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
 #logo1 {
+    
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -54,12 +56,12 @@ ul li {
 }
 
 #logo2 {
-    /* height: 400px; */
+    height: 400px;
     width: 400px;
     position: absolute;
     top: 0;
-    right: -10px;
-    z-index: 100;
+    left: 10px;
+    z-index: 4;
 }
 
 #logo3 {
@@ -73,7 +75,8 @@ ul li {
 
 h2 {
     font-size: 4rem;
-    margin-top: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -91,4 +94,10 @@ h3 {
     position: relative;
     z-index: 5;
 
+}
+@media screen and (orientation:landscape){
+#book{
+    left: 75%;
+    
+}
 }
