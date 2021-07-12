@@ -1,5 +1,14 @@
+/* mobile */
+:root {
+    font-size: 11px;
+    --color1: rgb(252, 252, 45);
+    --color2: #09577A;
+    --color3: #1D87F2;
+    --color4: #040B50;
+}
+
+
 header {
-    font-size: 9px;
     height: 10px;
     margin-top: 10px;
 
@@ -7,14 +16,15 @@ header {
 
 body {
     background: radial-gradient(closest-side, white, #09577A);
-    height: 500px;
+    overflow: hidden;
+        min-height: 100vh;
 }
 
 ul {
+    font-size: 0.8rem;
     padding-left: 0;
     margin: auto;
     text-align: center;
-    color: white;
 }
 
 ul li {
@@ -32,7 +42,10 @@ ul li {
     left: 50%;
     z-index: 5;
 }
-
+#lo{
+    position: relative;
+    overflow: hidden;
+}
 #logo1 {
     display: block;
     margin-left: auto;
@@ -41,12 +54,12 @@ ul li {
 }
 
 #logo2 {
-    height: 400px;
+    /* height: 400px; */
     width: 400px;
     position: absolute;
-    left: 30%;
-    bottom: -35px;
-    z-index: 4;
+    top: 0;
+    right: -10px;
+    z-index: 100;
 }
 
 #logo3 {
@@ -55,29 +68,27 @@ ul li {
     height: 200px;
     width: 200px;
     left: -80px;
-    top: -50px;
+    top: -80px;
 }
 
 h2 {
+    font-size: 4rem;
     margin-top: 50px;
-    color: white;
 }
 
 h3 {
+    font-size: 3.5rem;
     margin-top: 0;
     margin-bottom: 0;
-    color: white;
     padding: 0px;
     font-family: cursive;
-    font-size: 40px;
     font-weight: 100;
 }
 
 h2,
 h3 {
+    color: var(--color1);
     position: relative;
     z-index: 5;
-}
 
-@media screen and (max-height:350) {
 }
