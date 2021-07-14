@@ -17,7 +17,8 @@ header {
 body {
     background: radial-gradient(closest-side, white, #09577A);
     overflow: hidden;
-        min-height: 100vh;
+    min-height: 100vh;
+    margin-right: 0;
 }
 
 ul {
@@ -42,13 +43,15 @@ ul li {
     left: 50%;
     z-index: 5;
 }
-#lo{
+
+#lo {
     height: 400px;
     position: relative;
     overflow: hidden;
 }
+
 #logo1 {
-    
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -95,9 +98,186 @@ h3 {
     z-index: 5;
 
 }
-@media screen and (orientation:landscape){
-#book{
-    left: 75%;
-    
+
+@media screen and (min-height:630px) {
+    #book {
+        top: 100px;
+
+    }
+
+    ul {
+        font-size: 1rem;
+    }
 }
+
+/* paysage */
+@media screen and (orientation: landscape) {
+    header {
+        height: 30px;
+
+    }
+
+    #presentation {
+        position: absolute;
+        left: 110px;
+        top: 30px;
+    }
+
+    #competence {
+        position: absolute;
+        left: 110px;
+        top: 80px;
+    }
+
+    #experience {
+        position: absolute;
+        right: 130px;
+        top: 30px;
+    }
+
+    #formation {
+        position: absolute;
+        right: 130px;
+        top: 80px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        top: -50px;
+    }
+
+    h3 {
+        display: inline;
+        font-size: 2rem;
+        top: -50px;
+
+    }
+
+    h2,
+    h3 {
+        display: inline;
+        margin-left: 40px;
+
+    }
+
+    #lo {
+        top: -50px;
+        z-index: 6;
+    }
+
+    #book {
+        height: 170px;
+        top: 0px;
+        bottom: 0;
+    }
+
+    #logo2 {
+        left: 100px;
+    }
+
+    ul {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 569px) and (orientation: landscape) {
+    #book {
+        height: 200px;
+        width: 180px;
+        top: 10px;
+    }
+
+    ul {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3.3rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+
+    h3 {
+        left: 50px;
+    }
+
+    #logo2 {
+        height: 500px;
+        width: 500px;
+        left: 25%;
+    }
+
+    #book {
+        top: 10px;
+        left: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    #lo {
+        height: 600px;
+    }
+
+    #book {
+        height: 400px;
+        width: 300px;
+    }
+
+    #logo2 {
+        top: 100px;
+    }
+
+    ul {
+        font-size: 2rem;
+    }
+
+    h3 {
+        right: -500px;
+    }
+
+    h2 {
+        top: 70px
+    }
+
+    h2,
+    h3 {
+        font-size: 5rem;
+    }
+}
+
+/* tablette */
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+
+    #book {
+        height: 400px;
+        width: 300px;
+        top: 40px;
+        left: 500px;
+    }
+
+    #lo {
+        top: 50px;
+        height: 600px;
+    }
+
+    h2 {
+        top: 50px;
+        font-size: 5rem;
+    }
+
+    h3 {
+        left: 140px;
+        font-size: 4rem;
+        top: 50px
+    }
+
+    ul {
+        font-size: 3rem;
+    }
 }
