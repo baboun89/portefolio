@@ -55,6 +55,8 @@ ul li {
     display: block;
     margin-left: auto;
     margin-right: auto;
+animation-direction: alternate;
+animation-duration: 5s;
 
 }
 
@@ -74,6 +76,7 @@ ul li {
     width: 200px;
     left: -80px;
     top: -80px;
+    
 }
 
 h2 {
@@ -97,6 +100,21 @@ h3 {
     position: relative;
     z-index: 5;
 
+}
+#logo1:hover{
+    animation-play-state: paused;
+    }
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+ 
+.rotating {
+    -webkit-animation: rotating 10s linear infinite;
 }
 
 @media screen and (min-height:630px) {
