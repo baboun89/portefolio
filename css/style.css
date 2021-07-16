@@ -19,6 +19,7 @@ body {
     overflow: hidden;
     min-height: 100vh;
     margin-right: 0;
+    position: relative;
 }
 
 ul {
@@ -55,8 +56,8 @@ ul li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-animation-direction: alternate;
-animation-duration: 5s;
+    animation-direction: alternate;
+    animation-duration: 5s;
 
 }
 
@@ -76,7 +77,7 @@ animation-duration: 5s;
     width: 200px;
     left: -80px;
     top: -80px;
-    
+
 }
 
 h2 {
@@ -101,18 +102,21 @@ h3 {
     z-index: 5;
 
 }
-#logo1:hover{
+
+#logo1:hover {
     animation-play-state: paused;
-    }
+}
+
 @-webkit-keyframes rotating {
-    from{
+    from {
         -webkit-transform: rotate(0deg);
     }
-    to{
+
+    to {
         -webkit-transform: rotate(360deg);
     }
 }
- 
+
 .rotating {
     -webkit-animation: rotating 10s linear infinite;
 }
@@ -297,5 +301,18 @@ h3 {
 
     ul {
         font-size: 3rem;
+    }
+
+    @media screen and (min-width: 1025px) and (orientation: landscape) {
+
+
+        #pp {
+            background-color: brown;
+            width: 75%;
+            height: 75%;
+            position: absolute;
+            margin: 5%;
+            transform: translateX(10%);
+        }
     }
 }
