@@ -307,12 +307,27 @@ h3 {
 
 
         #pp {
-            background-color: brown;
-            width: 75%;
+            background: radial-gradient(closest-side, white, #09577A);
+            width: 150%;
             height: 75%;
             position: absolute;
-            margin: 5%;
-            transform: translateX(10%);
+            right: 25%;
+            top: 12%;
+            margin: auto;
+        }
+
+        body {
+            height: 100%;
+            background: #040B50;
+        }
+
+        #background {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            background:#1D87F2 ;
         }
     }
 }
