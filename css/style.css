@@ -317,6 +317,7 @@ h3 {
         }
 
         body {
+            position: relative;
             height: 100%;
             background: #040B50;
         }
@@ -324,7 +325,7 @@ h3 {
         #background {
             position: absolute;
             left: 50%;
-            top: 0;
+            bottom: 8px;
             height: 100%;
             width: 50%;
             background:#1D87F2 ;
