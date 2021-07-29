@@ -234,7 +234,8 @@ h3 {
     }
 
     h3 {
-        right: -500px;
+        right: 50px;
+        text-align: right  ;
     }
 
     h2 {
