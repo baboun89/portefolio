@@ -103,34 +103,6 @@ h3 {
 
 }
 
-#logo1:hover {
-    animation-play-state: paused;
-}
-
-@-webkit-keyframes rotating {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-.rotating {
-    -webkit-animation: rotating 10s linear infinite;
-}
-
-@media screen and (min-height:630px) {
-    #book {
-        top: 100px;
-
-    }
-
-    ul {
-        font-size: 1rem;
-    }
-}
 
 /* paysage */
 @media screen and (orientation: landscape) {
@@ -247,6 +219,7 @@ h3 {
     }
 
     #book {
+        top: 100px;
         height: 400px;
         width: 300px;
 
@@ -303,52 +276,96 @@ h3 {
     ul {
         font-size: 3rem;
     }
+}
 
-    @media screen and (min-width: 1025px) and (orientation: landscape) {
+@media screen and (min-width: 1025px) and (orientation: landscape) {
 
 
-        #pp {
-            background: radial-gradient(closest-side, white, #09577A);
-            height: 75%;
-            position: absolute;
-            right: 10%;
-            left: 10%;
-            top: 12%;
+    #pp {
+        background: radial-gradient(closest-side, white, #09577A);
+        height: 75%;
+        position: absolute;
+        right: 10%;
+        left: 10%;
+        top: 12%;
+    }
+
+    body {
+        position: relative;
+        height: 100%;
+        background-image: linear-gradient(to right, var(--color4), var(--color4) 50%, var(--color3)50%);
+    }
+
+
+    #competence {
+        left: 300px;
+        top: 100px;
+        font-size: 5rem;
+
+    }
+
+    #formation {
+        right: 350px;
+        top: 100px;
+        font-size: 5rem;
+
+    }
+
+    #presentation,
+    #experience {
+        font-size: 5rem;
+
+    }
+
+    h2 {
+        top: 200px;
+        font-size: 8rem;
+    }
+
+    h3 {
+        top: 300px;
+        left: -700px;
+        font-size: 8rem;
+    }
+
+    #book {
+        height: 400px;
+        width: 350px;
+        left: 1150px;
+        top: 0px;
+    }
+
+    #lo {
+        height: 100%;
+    }
+
+    #logo3 {
+        top: 100px;
+        left: 50px;
+    }
+
+    #logo2 {
+        height: 380px;
+        width: 380px;
+        left: 900px;
+        top: 10px;
+    }
+
+    #logo1:hover {
+        animation-play-state: paused;
+    }
+
+    @-webkit-keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
         }
 
-        body {
-            position: relative;
-            height: 100%;
-            background-image: linear-gradient(to right, var(--color4), var(--color4) 50%, var(--color3)50%);
+        to {
+            -webkit-transform: rotate(360deg);
         }
+    }
 
-        #competence {
-            position: absolute;
-            left: 220px;
-            top: 80px;
-        }
-
-        #formation {
-            position: absolute;
-            right: 260px;
-        }
-
-        h2 {
-            top: -30px;
-            font-size: 5rem;
-        }
-        h3{
-            left: -500px;
-        }
-        #book {
-            height: 300px;
-            width: 200px;
-            top: -100px;
-            left:  800px;
-        }
-        #lo {
-            /* top: 50px; */
-            height: 100%;
-        }
+    .rotating {
+        -webkit-animation: rotating 10s linear infinite;
     }
 }
