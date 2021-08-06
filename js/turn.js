@@ -1,12 +1,3 @@
-/**
- * turn.js 4th release
- * turnjs.com
- * turnjs.com/license.txt
- *
- * Copyright (C) 2012 Emmanuel Garcia
- * All rights reserved
- **/
-
 (function($) {
 
 'use strict';

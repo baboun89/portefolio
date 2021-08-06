@@ -38,9 +38,15 @@ ul li {
     height: 200px;
     width: 160px;
     position: absolute;
+    top: 5%;
     right: 5%;
     z-index: 5;
 }
+#abook{
+    top: 220px;
+}
+
+
 
 #lo {
     height: 400px;
@@ -235,12 +241,13 @@ h3 {
 }
 
 /* tablette */
-@media screen and (min-width: 1023px) and (orientation: landscape) {
+@media screen and (min-width: 1023px) and (orientation: portrait) {
 
     #book {
         height: 400px;
         width: 300px;
         right: 200px;
+        top: 5%;
     }
 
     #lo {
@@ -249,14 +256,14 @@ h3 {
     }
 
     h2 {
-        top: 50px;
+        top: 0;
         font-size: 5rem;
     }
 
     h3 {
         left: 140px;
-        font-size: 4rem;
-        top: 50px
+        font-size: 3rem;
+        top: 0
     }
 
     ul {
@@ -264,7 +271,7 @@ h3 {
     }
 }
 
-@media screen and (min-width: 1025px) and (orientation: landscape) {
+@media screen and (min-width: 1023px) and (orientation: landscape) {
 
     #pp {
         background: radial-gradient(closest-side, white, #09577A);
@@ -282,12 +289,14 @@ h3 {
     }
 
     h3 {
-        left: 300px;
+        left: -0px;
+    }
+    #book {
+        height: 400px;
+        width: 300px;
+        top: 2%;
     }
 
-    #book {
-        right: 350px;
-    }
 
     #logo3 {
         height: 80px;
@@ -322,11 +331,3 @@ h3 {
     }
 
 }
-/* animation livre
-#abook{
-    left: 50%;
-}
-.hard{
-    background-color: cornsilk;
-
-} */
