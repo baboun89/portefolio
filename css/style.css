@@ -42,14 +42,15 @@ ul li {
     right: 5%;
     z-index: 5;
 }
-#abook{
+
+#abook {
     top: 220px;
 }
 
 
 
 #lo {
-    height: 400px;
+    height: 500px;
     position: relative;
     overflow: hidden;
 }
@@ -159,9 +160,10 @@ h3 {
     }
 
     #book {
-        height: 170px;
+        height: 180px;
         bottom: 220px;
         right: 22%;
+        top: 10px;
     }
 
     #logo2 {
@@ -170,6 +172,15 @@ h3 {
 
     ul {
         font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+    #book {
+        height: 250px;
+        width: 180px;
+        top: 15%;
+        right: 2px;
     }
 }
 
@@ -198,10 +209,16 @@ h3 {
         left: 50px;
     }
 
+    #book {
+        height: 220px;
+        width: 170px;
+        right: 29%;
+    }
+
     #logo2 {
         height: 500px;
         width: 500px;
-        left: 25%;
+        left: 20%;
     }
 
 }
@@ -215,10 +232,14 @@ h3 {
         height: 400px;
         width: 300px;
         bottom: 100px;
+        right: 10%;
     }
 
     #logo2 {
-        top: 100px;
+        height: 600px;
+        width: 600px;
+        left: 10%;
+        top: 10px;
     }
 
     ul {
@@ -251,8 +272,8 @@ h3 {
     }
 
     #lo {
-        top: 50px;
-        height: 600px;
+        top: 120px;
+        height: 800px;
     }
 
     h2 {
@@ -288,13 +309,12 @@ h3 {
         background-image: linear-gradient(to right, var(--color4), var(--color4) 50%, var(--color3)50%);
     }
 
-    h3 {
-        left: -0px;
-    }
+
     #book {
         height: 400px;
         width: 300px;
-        top: 2%;
+        top: 3%;
+        right: 14%;
     }
 
 
@@ -306,10 +326,10 @@ h3 {
     }
 
     #logo2 {
-        height: 380px;
-        width: 380px;
-        left: 400px;
-        top: 10px;
+        height: 400px;
+        width: 400px;
+        left: 150px;
+        top: 28px;
     }
 
     #logo1:hover {
