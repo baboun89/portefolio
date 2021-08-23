@@ -160,10 +160,10 @@ h3 {
     }
 
     #book {
-        height: 180px;
+        height: 170px;
         bottom: 220px;
         right: 22%;
-        top: 10px;
+        top: 15px;
     }
 
     #logo2 {
@@ -175,11 +175,11 @@ h3 {
     }
 }
 
-@media screen and (min-width: 375px) and (orientation: portrait) {
+@media screen and (min-width: 374px) and (orientation: portrait) {
     #book {
         height: 250px;
         width: 180px;
-        top: 15%;
+        top: 20%;
         right: 2px;
     }
 }
@@ -188,7 +188,6 @@ h3 {
     #book {
         height: 200px;
         width: 180px;
-        bottom: 180px;
     }
 
     ul {
@@ -213,6 +212,7 @@ h3 {
         height: 220px;
         width: 170px;
         right: 29%;
+        
     }
 
     #logo2 {
@@ -225,14 +225,13 @@ h3 {
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
     #lo {
-        height: 600px;
+        height: 800px;
     }
 
     #book {
-        height: 400px;
-        width: 300px;
-        bottom: 100px;
-        right: 10%;
+        height: 500px;
+        width: 380px;
+        right: 1%;
     }
 
     #logo2 {
@@ -292,7 +291,7 @@ h3 {
     }
 }
 
-@media screen and (min-width: 1023px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) and (orientation: landscape) {
 
     #pp {
         background: radial-gradient(closest-side, white, #09577A);
@@ -313,7 +312,7 @@ h3 {
     #book {
         height: 400px;
         width: 300px;
-        top: 3%;
+        top: 5%;
         right: 14%;
     }
 
@@ -350,4 +349,24 @@ h3 {
         -webkit-animation: rotating 10s linear infinite;
     }
 
+}
+
+@media screen and (min-width: 1300px) and (orientation: landscape) {
+
+
+    #book {
+        height: 500px;
+        width: 400px;
+        top: 5%;
+        left: 50%;
+    }
+    #logo2 {
+        height: 500px;
+        width: 500px;
+        left: 150px;
+        top: 40px;
+    }
+    #lo {
+        height: 1000px;
+    }
 }
