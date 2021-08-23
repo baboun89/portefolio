@@ -1,6 +1,6 @@
 window.onload = function () {
     $("#abook").turn({
-        width: 300,
+        width: 320,
         height: 173,
 
     });
@@ -16,7 +16,7 @@ window.onload = function () {
     // Manage orientation
     portraitLandscape.addEventListener("change", function (m) {
         if (m.matches) {
-            $("#abook").width(500);
+            $("#abook").width(380);
             $("#abook").height(270);
 
             // Changed to landscape
@@ -42,6 +42,7 @@ window.onload = function () {
     Portrait.addEventListener("change", function (m) {
         if (m.matches) {
             // Change to tabletPortrait format
+            
         }
     });
     // Manage tabletLandscape
