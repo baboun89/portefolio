@@ -34,25 +34,9 @@ ul li {
     margin-left: 10px;
 }
 
-#book {
-    height: 200px;
-    width: 160px;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    z-index: 5;
-}
-
-#Flipbook{
-    /* top: 220px;
-    right: 8px; */
-    z-index: 5;
-}
-img{
+img {
     vertical-align: middle;
 }
-
-
 
 #lo {
     height: 500px;
@@ -66,16 +50,18 @@ img{
     margin-right: auto;
     animation-direction: alternate;
     animation-duration: 5s;
-
 }
 
 #logo2 {
     height: 400px;
     width: 400px;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 10px;
-    z-index: 4;
+    z-index: 0;
+}
+#flipBook{
+    top: 10px;
 }
 
 #logo3 {
@@ -163,18 +149,12 @@ h3 {
         top: -50px;
         z-index: 6;
     }
+    #flipBook{
 
-    #book {
-        height: 170px;
-        bottom: 220px;
-        right: 22%;
-        top: 15px;
+        width: 48% !important;
+        left: 25%;
+        top: 5px;
     }
-    #abook {
-        top: 20px;
-        right: -80px;
-    }
-    
 
     #logo2 {
         left: 100px;
@@ -186,19 +166,22 @@ h3 {
 }
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
-    #book {
+    /* #book {
         height: 250px;
         width: 180px;
         top: 20%;
         right: 2px;
+    } */
+    #flipBook{
+        top: 80px;
     }
 }
 
 @media screen and (min-width: 569px) and (orientation: landscape) {
-    #book {
+    /* #book {
         height: 200px;
         width: 180px;
-    }
+    } */
 
     ul {
         font-size: 2rem;
@@ -218,12 +201,12 @@ h3 {
         left: 50px;
     }
 
-    #book {
+    /* #book {
         height: 220px;
         width: 170px;
         right: 29%;
-        
-    }
+
+    } */
 
     #logo2 {
         height: 500px;
@@ -238,11 +221,11 @@ h3 {
         height: 800px;
     }
 
-    #book {
+    /* #book {
         height: 500px;
         width: 380px;
         right: 1%;
-    }
+    } */
 
     #logo2 {
         height: 600px;
@@ -273,12 +256,12 @@ h3 {
 /* tablette */
 @media screen and (min-width: 1023px) and (orientation: portrait) {
 
-    #book {
+    /* #book {
         height: 400px;
         width: 300px;
         right: 200px;
         top: 5%;
-    }
+    } */
 
     #lo {
         top: 120px;
@@ -317,14 +300,17 @@ h3 {
         height: 100%;
         background-image: linear-gradient(to right, var(--color4), var(--color4) 50%, var(--color3)50%);
     }
+    #flipBook{
+        width: 80% !important;
+        left: 80px;
+    }
 
-
-    #book {
+    /* #book {
         height: 400px;
         width: 300px;
         top: 5%;
         right: 14%;
-    }
+    } */
 
 
     #logo3 {
@@ -364,19 +350,26 @@ h3 {
 @media screen and (min-width: 1300px) and (orientation: landscape) {
 
 
-    #book {
+    /* #book {
         height: 500px;
         width: 400px;
         top: 5%;
         left: 50%;
-    }
+    } */
+
     #logo2 {
-        height: 500px;
-        width: 500px;
-        left: 150px;
-        top: 40px;
+        height: 300px;
+        width: 330px;
+        left: 300px;
+        top: 30px;
     }
+
     #lo {
         height: 1000px;
+    }
+    #flipBook{
+        width: 45% !important;
+        left: 300px;
+        top: 10px;
     }
 }

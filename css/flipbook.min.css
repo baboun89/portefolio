@@ -11,6 +11,7 @@
  -o-transition:left .7s;
  transition:left .7s;
  top:0;
+ z-index: 5;
 }
 .c-flipbook:not(.is-ready) * {
  -webkit-transition:none!important;
