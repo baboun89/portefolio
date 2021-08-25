@@ -10,7 +10,7 @@
  -webkit-transition:left .7s;
  -o-transition:left .7s;
  transition:left .7s;
- top:0
+ top:0;
 }
 .c-flipbook:not(.is-ready) * {
  -webkit-transition:none!important;

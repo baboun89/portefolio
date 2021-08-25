@@ -1,3 +1,4 @@
 new FlipBook('flipBook', {
-    canClose: true
+    canClose: true,
+    
 })

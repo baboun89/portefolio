@@ -1,3 +1,35 @@
-#flipBook{
-    margin-top: 50px;
+#flipBook {
+    top: 30%;
+    width: 100%;
+}
+
+@media screen and (orientation: landscape) {
+    #flipBook {
+        top: 0;
+        width: 84% !important;
+        left: 8%;
+    }
+}
+
+@media screen and (min-width: 767px) and (orientation: landscape) {
+    #flipBook {
+        width: 69% !important;
+        left: 15%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    #flipBook {
+        width: 99% !important;
+        left: 5px;
+        top: 40px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (orientation: landscape) {
+    #flipBook {
+        width: 74% !important;
+        top: 1px;
+        left: 250px;
+    }
 }
