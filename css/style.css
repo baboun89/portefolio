@@ -61,6 +61,7 @@ img {
     z-index: 0;
 }
 #flipBook{
+    left: -2px;
     top: 10px;
 }
 
@@ -182,7 +183,9 @@ h3 {
         height: 200px;
         width: 180px;
     } */
-
+    #flipBook{
+        left: 170px;
+    }
     ul {
         font-size: 2rem;
     }
@@ -213,7 +216,10 @@ h3 {
         width: 500px;
         left: 20%;
     }
-
+    #flipBook{
+        width: 42% !important;
+        left: 235px;
+    }
 }
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
@@ -301,8 +307,9 @@ h3 {
         background-image: linear-gradient(to right, var(--color4), var(--color4) 50%, var(--color3)50%);
     }
     #flipBook{
-        width: 80% !important;
-        left: 80px;
+        width: 78% !important;
+        left: 90px;
+        top: 15px;
     }
 
     /* #book {
