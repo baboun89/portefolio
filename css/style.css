@@ -167,22 +167,12 @@ h3 {
 }
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
-    /* #book {
-        height: 250px;
-        width: 180px;
-        top: 20%;
-        right: 2px;
-    } */
     #flipBook{
         top: 80px;
     }
 }
 
 @media screen and (min-width: 569px) and (orientation: landscape) {
-    /* #book {
-        height: 200px;
-        width: 180px;
-    } */
     #flipBook{
         left: 170px;
     }
@@ -204,13 +194,6 @@ h3 {
         left: 50px;
     }
 
-    /* #book {
-        height: 220px;
-        width: 170px;
-        right: 29%;
-
-    } */
-
     #logo2 {
         height: 500px;
         width: 500px;
@@ -226,12 +209,6 @@ h3 {
     #lo {
         height: 800px;
     }
-
-    /* #book {
-        height: 500px;
-        width: 380px;
-        right: 1%;
-    } */
 
     #logo2 {
         height: 600px;
@@ -261,13 +238,6 @@ h3 {
 
 /* tablette */
 @media screen and (min-width: 1023px) and (orientation: portrait) {
-
-    /* #book {
-        height: 400px;
-        width: 300px;
-        right: 200px;
-        top: 5%;
-    } */
 
     #lo {
         top: 120px;
@@ -312,14 +282,6 @@ h3 {
         top: 15px;
     }
 
-    /* #book {
-        height: 400px;
-        width: 300px;
-        top: 5%;
-        right: 14%;
-    } */
-
-
     #logo3 {
         height: 80px;
         width: 80px;
@@ -356,14 +318,6 @@ h3 {
 
 @media screen and (min-width: 1300px) and (orientation: landscape) {
 
-
-    /* #book {
-        height: 500px;
-        width: 400px;
-        top: 5%;
-        left: 50%;
-    } */
-
     #logo2 {
         height: 300px;
         width: 330px;
@@ -374,6 +328,7 @@ h3 {
     #lo {
         height: 1000px;
     }
+
     #flipBook{
         width: 45% !important;
         left: 300px;
