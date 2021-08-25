@@ -3,6 +3,9 @@
     width: 100%;
     left: -5px;
 }
+img{
+    vertical-align: middle;
+}
 
 @media screen and (orientation: landscape) {
     #flipBook {
