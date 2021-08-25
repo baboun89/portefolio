@@ -110,7 +110,12 @@ h3 {
     z-index: 5;
 
 }
-
+.feuilles{
+    display: flex;
+}
+.feuille{
+    flex-direction: row;
+}
 
 /* paysage */
 @media screen and (orientation: landscape) {
@@ -142,7 +147,6 @@ h3 {
         right: 130px;
         top: 80px;
     }
-
     h2 {
         font-size: 2.5rem;
         top: -40px;
@@ -171,6 +175,13 @@ h3 {
         left: 25%;
         top: 5px;
     }
+    .feuilles{
+        width: 83% !important;
+        margin-left: 8%;
+        
+        
+    }
+    
 
     #logo2 {
         left: 100px;
