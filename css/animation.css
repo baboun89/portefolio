@@ -1,11 +1,12 @@
 #flipBook {
     top: 30%;
     width: 100%;
+    left: -5px;
 }
 
 @media screen and (orientation: landscape) {
     #flipBook {
-        top: 0;
+        top: -5px;
         width: 84% !important;
         left: 8%;
     }
