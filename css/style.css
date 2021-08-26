@@ -17,7 +17,7 @@ body {
     background: radial-gradient(closest-side, white, #09577A);
     overflow: hidden;
     min-height: 100vh;
-    margin-right: 0;
+    margin: 0;
     position: relative;
 }
 
@@ -66,17 +66,19 @@ img {
     top: 10px;
 }
 
-h1{
+h1 {
     position: absolute;
     top: 70px;
     left: 10px;
     font-size: 1.5rem;
 }
+
 #philippe {
-    
+width: 40%;
     position: absolute;
-    font-size: 1.2rem;
-    top: 0px;
+    font-size: 1rem;
+    top: 50px;
+    right: 20px;
 }
 
 #logo3 {
@@ -110,11 +112,22 @@ h3 {
     z-index: 5;
 
 }
-.feuilles{
+
+.feuilles {
     display: flex;
+    
 }
-.feuille{
+
+.feuille {
     flex-direction: row;
+    
+}
+
+#feuille1 h1 {
+    top: 15%;
+    left: 2%;
+    font-size: 2rem;
+
 }
 
 /* paysage */
@@ -147,6 +160,7 @@ h3 {
         right: 130px;
         top: 80px;
     }
+
     h2 {
         font-size: 2.5rem;
         top: -40px;
@@ -175,13 +189,23 @@ h3 {
         left: 25%;
         top: 5px;
     }
-    .feuilles{
-        width: 83% !important;
+
+    .feuilles {
+        width: 85% !important;
         margin-left: 8%;
-        
-        
+
     }
-    
+    #philippe{
+        width: 35%;
+        top: 30px;
+        right: 70px;
+        font-size: 2rem;
+    }
+    #feuille1 h1{
+        top: 40%;
+        left: 12%;
+        font-size: 2.5rem;
+    }
 
     #logo2 {
         left: 100px;
