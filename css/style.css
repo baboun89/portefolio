@@ -69,15 +69,23 @@ img {
 h1 {
     position: absolute;
     top: 70px;
-    left: 10px;
+    left: 20px;
     font-size: 1.5rem;
 }
 
 #philippe {
-width: 40%;
+    width: 70%;
     position: absolute;
     font-size: 1rem;
-    top: 50px;
+    top: 40px;
+    right: 20%;
+}
+
+#phil {
+    width: 40%;
+    position: absolute;
+    font-size: 1.1rem;
+    top: 30px;
     right: 20px;
 }
 
@@ -115,18 +123,18 @@ h3 {
 
 .feuilles {
     display: flex;
-    
+
 }
 
 .feuille {
     flex-direction: row;
-    
+
 }
 
 #feuille1 h1 {
     top: 15%;
     left: 2%;
-    font-size: 2rem;
+    font-size: 1.7rem;
 
 }
 
@@ -159,6 +167,10 @@ h3 {
         position: absolute;
         right: 130px;
         top: 80px;
+    }
+
+    h1 {
+        left: 5px;
     }
 
     h2 {
@@ -195,13 +207,22 @@ h3 {
         margin-left: 8%;
 
     }
-    #philippe{
-        width: 35%;
-        top: 30px;
-        right: 70px;
-        font-size: 2rem;
+
+    #philippe {
+        width: 70%;
+        top: 20px;
+        right: 20px;
+        font-size: 0.9rem;
     }
-    #feuille1 h1{
+    #phil {
+        width: 35%;
+        top: 20px;
+        right: 50px;
+        font-size: 0.9rem;
+    }
+
+
+    #feuille1 h1 {
         top: 40%;
         left: 12%;
         font-size: 2.5rem;
@@ -225,6 +246,10 @@ h3 {
 @media screen and (min-width: 569px) and (orientation: landscape) {
     #flipBook {
         left: 170px;
+    }
+    #phil{
+        right: 50px;
+        font-size: 2rem;
     }
 
     ul {
