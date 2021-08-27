@@ -122,6 +122,7 @@ h3 {
 }
 
 .feuilles {
+    margin-top: 80%;
     display: flex;
 
 }
@@ -203,8 +204,9 @@ h3 {
     }
 
     .feuilles {
+        margin-top: 0;
         width: 85% !important;
-        margin-left: 8%;
+        margin-left: 7%;
 
     }
 
@@ -218,15 +220,15 @@ h3 {
     #phil {
         width: 35%;
         top: 20px;
-        right: 50px;
-        font-size: 0.9rem;
+        right: 70px;
+        font-size: 1.6rem;
     }
 
 
     #feuille1 h1 {
-        top: 40%;
+        top: 30%;
         left: 12%;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     #logo2 {
@@ -252,6 +254,13 @@ h3 {
     #philippe {
         font-size: 1.2rem;
     }
+    #phil{
+        font-size: 1.2rem;
+    }
+    #feuille1 h1{
+        left: 20px;
+        top: 100px;
+    }
 }
 
 @media screen and (min-width: 569px) and (orientation: landscape) {
@@ -264,12 +273,17 @@ h3 {
     }
 
     #phil {
-        right: 50px;
+        right:70px;
         font-size: 2rem;
     }
 
     ul {
         font-size: 2rem;
+    }
+
+    #feuille1 h1{
+        font-size: 2.5rem;
+        left: 90px;
     }
 
     h1 {
@@ -283,6 +297,7 @@ h3 {
     h3 {
         font-size: 3rem;
     }
+
 }
 
 @media screen and (min-width: 767px) and (orientation: landscape) {
@@ -306,6 +321,19 @@ h3 {
     #philippe{
         font-size: 1.1rem;
     }
+    #phil{
+        width: 30%;
+        font-size: 2rem;
+        right: 140px;
+    }
+    .feuilles{
+        margin-left: 15%;
+        width: 70% !important;
+    }
+    #feuille1 h1{
+        left: 150px;
+    }
+
 }
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
