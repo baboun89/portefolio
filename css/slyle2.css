@@ -11,8 +11,12 @@ body {
 #feuilles{
         display: flex;
     align-items: center;
+    margin-top: 40%;
     
 }
 .feuille{
     align-items: center;
+}
+#logo{
+    margin-left: 35%;
 }
