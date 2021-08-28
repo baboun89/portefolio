@@ -9,7 +9,10 @@ body {
 }
 
 #feuilles{
-    display: flex;
+        display: flex;
     align-items: center;
     
+}
+.feuille{
+    align-items: center;
 }

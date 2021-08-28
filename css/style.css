@@ -443,7 +443,7 @@ h3 {
     #flipBook {
         width: 59% !important;
         left: 177px;
-        top: 10px;
+        top: 50px;
     }
     .feuilles{
         width: 100% !important;
@@ -505,8 +505,8 @@ h3 {
 @media screen and (min-width: 1300px) and (orientation: landscape) {
 
     #logo2 {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
         left: 300px;
         top: 30px;
     }
@@ -517,7 +517,7 @@ h3 {
 
     #flipBook {
         width: 45% !important;
-        left: 345px;
+        left: 305px;
         top: 10px;
     }
 
