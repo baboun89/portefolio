@@ -1,9 +1,10 @@
 body {
     background: radial-gradient(closest-side, white, #09577A);
     overflow: hidden;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     position: relative;
+text-align: center;
     
     
 }
@@ -11,12 +12,18 @@ body {
 #feuilles{
         display: flex;
     align-items: center;
-    margin-top: 40%;
+    height: calc(100% - 100px);
     
 }
 .feuille{
     align-items: center;
+    
 }
-#logo{
-    margin-left: 35%;
+h1{
+    
+    font-size: 0.8rem; 
+}
+#phil{
+    font-size: 1rem;
+
 }

@@ -123,12 +123,12 @@ h3 {
 
 .feuilles {
     
-    /* margin-top: 80%; */
     display: flex;
 
 }
 
 .feuille {
+
     flex-direction: row;
 
 }
@@ -540,6 +540,10 @@ h3 {
         top: 50px;
         right: 19%;
         font-size: 5rem;
+    }
+    #quatre{
+         
+              
     }
 
 }
