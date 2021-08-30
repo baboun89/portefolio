@@ -4,26 +4,150 @@ body {
     height: 100vh;
     margin: 0;
     position: relative;
-text-align: center;
-    
-    
+    text-align: center;
 }
 
-#feuilles{
-        display: flex;
+#logo1 {
+    position: relative;
+    z-index: 5;
+    left: 0;
+    align-items: center;
+}
+
+
+
+#feuilles {
+
+    display: flex;
     align-items: center;
     height: calc(100% - 100px);
-    
-}
-.feuille{
-    align-items: center;
-    
-}
-h1{
-    
-    font-size: 0.8rem; 
-}
-#phil{
-    font-size: 1rem;
+    z-index: 6;
 
+}
+
+.feuille {
+    position: relative;
+
+
+}
+
+h1 {
+
+    font-size: 0.8rem;
+}
+
+#phil {
+    font-size: 0.8rem;
+
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    font-size: 1.2rem;
+}
+
+#phil {
+    position: absolute;
+    top: 20%;
+}
+
+@media screen and (orientation: landscape) {
+    #feuilles {
+        width: 85%;
+        margin: auto;
+        margin-top: -50px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        left: 20px;
+    }
+
+    #phil {
+        width: 80%;
+        font-size: 1.1rem;
+        left: 30px;
+    }
+
+    #logo1 {
+        top: 20px;
+        left: -22%;
+    }
+}
+
+@media screen and (min-width: 374px) and (orientation: portrait) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    #phil {
+        width: 80%;
+        font-size: 1rem;
+        left: 20px;
+        top: 20px;
+    }
+}
+
+@media screen and (min-width: 569px) and (orientation: landscape) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #phil {
+        font-size: 1.5rem;
+        top: 20px;
+    }
+}
+
+@media screen and (min-width: 767px) and (orientation: landscape) {
+    #feuilles {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #logo1 {
+        left: -18%;
+    }
+}
+
+@media screen and (min-width: 767px) and (orientation: portrait) {
+    h1 {
+        font-size: 2.8rem;
+        left: 10px;
+    }
+
+    #phil {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    #feuilles {
+        width: 100%;
+    }
+
+    h1 {
+
+        font-size: 3.7rem;
+    }
+
+    #phil {
+        top: 100px;
+        font-size: 2.5rem;
+    }
+    #logo1{
+        top:100px;
+        left:-260px
+    }
+}
+@media screen and (min-width: 1300px) and (orientation: landscape) {
+#feuilles{
+   width: 120% ;
+
+}
 }
