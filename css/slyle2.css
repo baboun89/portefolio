@@ -52,6 +52,14 @@ h1 {
     position: absolute;
     top: 20%;
 }
+.fin{
+    left: 50%;
+    top: 70%;
+}
+.point{
+    text-decoration: none;
+    color: black;
+}
 
 @media screen and (orientation: landscape) {
     #feuilles {
