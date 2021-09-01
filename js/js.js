@@ -7,6 +7,4 @@ if (boutton == 1) {
     label.style.opacity = "1";
 } else {
     label.style.opacity = "0";
-
-
 }
