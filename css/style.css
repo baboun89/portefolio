@@ -21,7 +21,42 @@ body {
     position: relative;
     
 }
-
+.soleil {
+    position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation-name: animSun;
+            animation-duration: 10s;
+            animation-timing-function: cubic-bezier(1, .01, 0, 1);
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes animSun {
+            0% {
+                transform: translate(-200px, 300px);
+            }
+        
+            25% {
+                transform: translate(25vw, 40px);
+            }
+        
+            50% {
+                transform: translate(calc(50vw - 100px), -100px) scale(1.5);
+        
+            }
+        
+            75% {
+                transform: translate(75vw, 100px) scale(1);
+            }
+        
+            100% {
+                transform: translate(calc(100vw + 200px), 300px);
+            }
+        }
+    
 ul {
     font-size: 0.8rem;
     padding-left: 0;
@@ -601,9 +636,5 @@ label{
         right: 19%;
         font-size: 5rem;
     }
-    #quatre{
-         
-              
-    }
-
+    
 }
