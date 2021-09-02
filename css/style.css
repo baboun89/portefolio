@@ -19,44 +19,47 @@ body {
     min-height: 100vh;
     margin: 0;
     position: relative;
-    
+
 }
+
 .soleil {
     position: absolute;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            animation-name: animSun;
-            animation-duration: 10s;
-            animation-timing-function: cubic-bezier(1, .01, 0, 1);
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        
-        @keyframes animSun {
-            0% {
-                transform: translate(-200px, 300px);
-            }
-        
-            25% {
-                transform: translate(25vw, 40px);
-            }
-        
-            50% {
-                transform: translate(calc(50vw - 100px), -100px) scale(1.5);
-        
-            }
-        
-            75% {
-                transform: translate(75vw, 100px) scale(1);
-            }
-        
-            100% {
-                transform: translate(calc(100vw + 200px), 300px);
-            }
-        }
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: animSun;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(1, .01, 0, 1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
     
+}
+
+@keyframes animSun {
+    0% {
+        transform: translate(-200px, 300px);
+    }
+
+    25% {
+        transform: translate(25vw, 40px);
+    }
+
+    50% {
+        transform: translate(calc(50vw - 100px), -100px) scale(1.5);
+
+    }
+
+    75% {
+        transform: translate(75vw, 100px) scale(1);
+    }
+
+    100% {
+        transform: translate(calc(100vw + 200px), 300px);
+    }
+}
+
 ul {
     font-size: 0.8rem;
     padding-left: 0;
@@ -86,7 +89,7 @@ img {
     margin-right: auto;
     animation-direction: alternate;
     animation-duration: 5s;
-    
+
 }
 
 #logo2 {
@@ -95,7 +98,7 @@ img {
     position: absolute;
     top: 0px;
     left: -50px;
-    
+
 }
 
 #flipBook {
@@ -160,7 +163,7 @@ h3 {
 }
 
 .feuilles {
-    
+
     display: flex;
 
 }
@@ -177,29 +180,31 @@ h3 {
     font-size: 1.7rem;
 
 }
-input[type="checkbox"]
-{
+
+input[type="checkbox"] {
     -webkit-appearance: none;
     visibility: hidden;
     display: none;
 }
-.check{
+
+.check {
     position: relative;
     display: block;
     width: 40px;
     height: 20px;
     background: #092c3e;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
     transition: ease-in 0.5s;
 }
-input[type="checkbox"]:checked ~ .check
-{
-background: #fff;
-box-shadow: 0 0 0 1800px #092c3e;
+
+input[type="checkbox"]:checked~.check {
+    background: #fff;
+    box-shadow: 0 0 0 1800px #092c3e;
 }
-.check:before{
+
+.check:before {
     content: '';
     position: absolute;
     top: 2px;
@@ -210,15 +215,17 @@ box-shadow: 0 0 0 1800px #092c3e;
     border-radius: 50%;
     transition: 0.5s;
 }
-input[type="checkbox"]:checked ~ .check:before{
+
+input[type="checkbox"]:checked~.check:before {
     transform: translateX(-50px);
 }
-.check:after{
+
+.check:after {
     content: '';
     position: absolute;
     top: 2px;
     left: 2px;
-    background:#092c3e;
+    background: #092c3e;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -226,12 +233,14 @@ input[type="checkbox"]:checked ~ .check:before{
     transform: translateX(50px);
 
 }
-input[type="checkbox"]:checked ~ .check:after{
+
+input[type="checkbox"]:checked~.check:after {
     transform: translateX(0px);
 }
-label{
+
+label {
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 10px;
 }
 
@@ -486,10 +495,12 @@ label{
     .feuilles {
         margin-top: 40%;
     }
-    #feuille1 h1{
+
+    #feuille1 h1 {
         font-size: 4rem;
     }
-    #phil{
+
+    #phil {
         font-size: 2.8rem;
     }
 }
@@ -540,23 +551,28 @@ label{
         left: 177px;
         top: 50px;
     }
-    .feuilles{
+
+    .feuilles {
         width: 100% !important;
         margin-top: 35px;
         margin-left: 5px;
     }
+
     #philippe {
         font-size: 1.6rem;
         left: 40px;
     }
-    #feuille1 h1{
+
+    #feuille1 h1 {
         font-size: 5rem;
         left: 40px;
     }
-    #phil{
+
+    #phil {
         top: 100px;
         font-size: 3rem;
     }
+
     #logo3 {
         height: 80px;
         width: 80px;
@@ -624,17 +640,20 @@ label{
         top: 50px;
         font-size: 2 rem;
     }
-    .feuilles{
+
+    .feuilles {
         width: 200% !important;
         margin-left: 18.7%;
     }
-    #feuille1 h1{
+
+    #feuille1 h1 {
         left: 22%;
     }
-    #phil{
+
+    #phil {
         top: 50px;
         right: 19%;
         font-size: 5rem;
     }
-    
+
 }
