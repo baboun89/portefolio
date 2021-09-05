@@ -362,6 +362,12 @@ label {
         height: 30px;
 
     }
+label{
+    top: 43%;
+}
+#projectContainer {
+    z-index: 23;
+}
 
     #presentation {
         position: absolute;
@@ -410,14 +416,15 @@ label {
 
     #lo {
         top: -50px;
-        z-index: 6;
+        z-index: 25;
     }
 
     #flipBook {
 
         width: 48% !important;
         left: 25%;
-        top: 15px;
+        top: 10px;
+        
     }
 
     .feuilles {
@@ -454,6 +461,9 @@ label {
 
     ul {
         font-size: 1.4rem;
+    }
+    #logo3{
+        z-index: 25;
     }
 }
 
