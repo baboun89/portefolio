@@ -89,6 +89,8 @@ img {
     margin-right: auto;
     animation-direction: alternate;
     animation-duration: 5s;
+    
+    
 
 
 }
@@ -99,13 +101,14 @@ img {
     position: absolute;
     top: 0px;
     left: -50px;
+    z-index: 24;
 
 }
 
 #flipBook {
     left: 0;
-    top: 10px;
-    z-index: 20;
+    top: 50px;
+    z-index: 25;
 }
 
 h1 {
@@ -113,6 +116,7 @@ h1 {
     top: 70px;
     left: 10px;
     font-size: 1.5rem;
+    
 }
 
 #philippe {
@@ -138,21 +142,23 @@ h1 {
     width: 200px;
     left: -90px;
     top: -90px;
+    z-index: 22;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 h3 {
-    font-size: 3.5rem;
+
+    font-size: 3.2rem;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0px;
+    /* padding: 0px; */
     font-family: cursive;
-    font-weight: 100;
+    /* font-weight: 0; */
 }
 
 h2,
@@ -202,7 +208,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked~.check {
     background: #fff;
-    box-shadow: 0 0 0 1800px #092c3e;
+    /* box-shadow: 0 0 0 1800px #092c3e; */
 }
 
 .check:before {
@@ -241,8 +247,9 @@ input[type="checkbox"]:checked~.check:after {
 
 label {
     position: absolute;
-    top: 10px;
+    top: 545px;
     right: 10px;
+    z-index: 25;
     
 }
 #projectContainer {
@@ -253,6 +260,8 @@ label {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 21;
+
   }
   #starSuperContainer {
     width: 100vw;

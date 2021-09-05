@@ -30,9 +30,9 @@ if ((navigator.appVersion.indexOf("MSIE 10") != -1) || (UAString.indexOf("Triden
 var fireworkCounter = 0;
 var fireworkRayRotation = [0, -30, -60, -90, -120, -150, -180, -210, -240, 90, 60, 30];
 
-// window.addEventListener('load', function() {
-//   initialize();
-// });
+window.addEventListener('load', function() {
+  initialize();
+});
 
 function initialize() {
   fireworkTimers = [];

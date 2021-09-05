@@ -1,5 +1,5 @@
 new FlipBook('flipBook', {
-    canClose: true,
+  canClose: true,
 })
 let check = document.querySelector("input")
 let soleil = document.querySelector(".soleil")
@@ -7,23 +7,26 @@ let label = document.querySelector("label")
 let boutton = sessionStorage.getItem('click')
 let projectContainer = document.querySelector("#projectContainer")
 if (boutton == 1) {
-    soleil.style.display = "initial";
+  soleil.style.display = "initial";
 
 
 } else {
-    label.style.opacity = "0";
+  label.style.opacity = "0";
 
 }
 check.addEventListener("click", function () {
-    if (check.checked == true) {
-        projectContainer.style.display ="initial"
-        initialize();
-    } else{  
-
+  if (check.checked == true) {
+    projectContainer.style.display = "initial"
+    initialize();
   
 
+  } else {
+    projectContainer.style.display = "none"
+    
 
-    }
+
+
+  }
 })
 
 
@@ -59,9 +62,7 @@ if ((navigator.appVersion.indexOf("MSIE 10") != -1) || (UAString.indexOf("Triden
 var fireworkCounter = 0;
 var fireworkRayRotation = [0, -30, -60, -90, -120, -150, -180, -210, -240, 90, 60, 30];
 
-// window.addEventListener('load', function() {
-//   initialize();
-// });
+
 
 function initialize() {
   fireworkTimers = [];
@@ -131,7 +132,7 @@ function fireworkTiming() {
   }
 
   function createTimer(i, firework) {
-    fireworkTimers.push(window.setTimeout(function() {
+    fireworkTimers.push(window.setTimeout(function () {
       firework.style.bottom = Math.floor(Math.random() * ((window.innerHeight * .9) - (window.innerHeight * .7) + 1)) + (window.innerHeight * .7) + 'px';
       numCompletedFireworks++;
       explodeTimer(firework);
@@ -149,7 +150,7 @@ function fireworkTiming() {
   function explodeTimer(firework, i) {
     //var firework = firework;
     //console.log(firework.innerHTML)
-    window.setTimeout(function() {
+    window.setTimeout(function () {
       var fireworkRays = firework.getElementsByClassName('fireworkRay');
       var light = firework.getElementsByClassName('light')[0];
       for (var i = 0; i != fireworkRays.length; i++) {
@@ -163,7 +164,7 @@ function fireworkTiming() {
         light.style.backgroundColor = firework.style.backgroundColor;
       }
       //alert(light.length)
-      window.setTimeout(function() {
+      window.setTimeout(function () {
         firework.style.opacity = '0';
       }, 800);
     }, fireworkTransitionTime - 200);
@@ -194,9 +195,9 @@ function repositionFireworks() {
   fireworkTiming();
 }
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   window.clearTimeout(resizeTimer);
-  resizeTimer = window.setTimeout(function() {
+  resizeTimer = window.setTimeout(function () {
     initialize();
   }, 100);
 });
