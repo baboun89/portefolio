@@ -39,11 +39,11 @@ body {
 
 @keyframes animSun {
     0% {
-        transform: translate(-200px, 300px);
+        transform: translate(-200px, 400px);
     }
 
     25% {
-        transform: translate(25vw, 40px);
+        transform: translate(10vw, -200px);
     }
 
     50% {
@@ -156,9 +156,7 @@ h3 {
     font-size: 3.2rem;
     margin-top: 0;
     margin-bottom: 0;
-    /* padding: 0px; */
     font-family: cursive;
-    /* font-weight: 0; */
 }
 
 h2,
@@ -208,7 +206,6 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked~.check {
     background: #fff;
-    /* box-shadow: 0 0 0 1800px #092c3e; */
 }
 
 .check:before {
