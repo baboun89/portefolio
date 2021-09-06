@@ -1,111 +1,84 @@
-#projectContainer {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+body {
+  margin: 0;
+    /*la couleur defont de base */
+  background-color: #2c3e50;
+  animation-name: color;
+  /*la durée d'un cycle de l'animatio*/
+  animation-duration: 10s;
+  /*l'animation va etre de la meme vitesse*/
+  animation-timing-function: linear;
+  /*pas de temp avant le commencement de l'animation*/
+  animation-delay: 0s;
+  /*animation a l'infini*/
+  animation-iteration-count: infinite;
+
+}
+
+
+.soleil {
+
+  /*largeur du soleil*/
+  width: 180px;
+  /*hauteur du solei*/
+  height: 180px;
+  /*le rendre arondit*/
+  border-radius: 50%;
+  /*pour faire notre animation-on lui donne un nom*/
+  animation-name: animSun;
+  /*definie la durée d'un cycle de l'animation*/
+  animation-duration: 10s;
+  /*l'animation va etre de la meme vitesse*/
+  animation-timing-function: cubic-bezier(1, .01, 0, 1);
+  /*pas de delai avant le commencement de l'animation*/
+  animation-delay: 0s;
+  /*animation a l'infini*/
+  animation-iteration-count: infinite;
+  /* animation-direction: ; */
+  /*l'animation va etre de la meme vitesse*/
+  animation-timing-function: linear;
+}
+
+@keyframes animSun {
+  0% {
+    transform: translate(-100%, 200%);
   }
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  50% {
+    transform: translate(50%,-50%);
+
   }
-  #starSuperContainer {
-    width: 100vw;
-    height: 70vh;
-    position: relative;
+  100% {
+    transform:  translate(100%, 200%);
   }
-  #starContainer {
-    width: 100%;
-    height: 100%;
+}
+
+@keyframes color {
+  0% {
+    /*la couleur du ciel à 0% du cycle*/
+    background: #2c3e50
   }
-  #starFade {
-    width: 100%;
-    height: 100%;
-    background: -webkit-linear-gradient(transparent, #333);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(transparent, #333);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(transparent, #333);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(transparent, #333);
-    /* Standard syntax */
-    position: absolute;
-    top: 0;
+
+  10% {
+    /*la couleur du ciel à 10% du cycle*/
+    background: pink;
   }
-  .star {
-    background-color: #fff;
-    border-radius: 50%;
-    position: fixed;
+
+  30% {
+    /*la couleur du ciel à 30% du cycle*/
+    background: #3498db;
   }
-  .fireworkContainer {
-    /*width:20px;
-                  height:20px;*/
-    margin-top: -4px;
-    margin-bottom: -4px;
-    position: absolute;
-    display: inline-block;
-    -o-transition: all 1s linear, opacity 2s linear;
-    -moz-transition: all 1s linear, opacity 2s linear;
-    -webkit-transition: all 1s linear, opacity 2s linear;
-    -ms-transition: all 1s linear, opacity 2s linear;
-    transition: all 1s linear, opacity 2s linear;
-    bottom: 0;
-    border-radius: 50%;
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -ms-filter: blur(1px);
-    -o-filter: blur(1px);
-    filter: blur(1px);
-    /*-webkit-box-shadow: 0 8px 6px -6px red;
-                  -moz-box-shadow: 0 8px 6px -6px red;
-                  box-shadow: 0 8px 6px -6px red;*/
+
+  70% {
+    /*la couleur du ciel à 70% du cycle*/
+    background: #3498db;
   }
-  .fireworkContainer * {
-    -o-transition: all .8s linear, opacity .1s linear;
-    -moz-transition: all .8s linear, opacity .1s linear;
-    -webkit-transition: all .8s linear, opacity .1s linear;
-    -ms-transition: all .8s linear, opacity .1s linear;
-    transition: all .8s linear, opaciyt .1s linear;
-    position: absolute;
-    width: 0;
-    height: 0;
-    -o-transform-origin: bottom center;
-    -moz-transform-origin: bottom center;
-    -webkit-transform-origin: bottom center;
-    -ms-transform-origin: bottom center;
-    transform-origin: bottom center;
+
+  90% {
+    /*la couleur du ciel à 90% du cycle*/
+    background: pink;
   }
-  #fireworksContainer {
-    position: fixed;
-    bottom: -100px;
-    display: table;
-    left: 10px;
+
+  100% {
+    /*la couleur du ciel à 100% du cycle*/
+    background: #2c3e50;
   }
-  * {
-    -webkit-user-select: none;
-    /* Chrome all / Safari all */
-    -moz-user-select: none;
-    /* Firefox all */
-    -ms-user-select: none;
-    /* IE 10+ */
-    user-select: none;
-  }
-  .light {
-    border-radius: 50%;
-    opacity: .4;
-    -webkit-filter: blur(40px);
-    -o-filter: blur(40px);
-    -moz-filter: blur(40px);
-    -ms-filter: blur(40px);
-    filter: blur(add=0, direction=300, strength=10);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+}

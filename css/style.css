@@ -24,8 +24,6 @@ body {
 
 .soleil {
     position: absolute;
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
     animation-name: animSun;
     animation-duration: 10s;
@@ -34,32 +32,24 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     display: none;
-    
+
 }
 
 @keyframes animSun {
     0% {
-        transform: translate(-200px, 400px);
-    }
-
-    25% {
-        transform: translate(10vw, -200px);
+        transform: translate(-50%, 200%);
     }
 
     50% {
-        transform: translate(calc(50vw - 100px), -100px) scale(1.5);
+        transform: translate(40%, -100%);
 
-    }
-
-    75% {
-        transform: translate(75vw, 100px) scale(1);
     }
 
     100% {
-        transform: translate(calc(100vw + 200px), 300px);
+        transform: translate(130%, 200%);
     }
 }
-
+     
 ul {
     font-size: 0.8rem;
     padding-left: 0;
@@ -89,10 +79,6 @@ img {
     margin-right: auto;
     animation-direction: alternate;
     animation-duration: 5s;
-    
-    
-
-
 }
 
 #logo2 {
@@ -116,7 +102,7 @@ h1 {
     top: 70px;
     left: 10px;
     font-size: 1.5rem;
-    
+
 }
 
 #philippe {
@@ -247,10 +233,11 @@ label {
     bottom: 200px;
     right: 10px;
     z-index: 25;
-    
+
 }
+
 #projectContainer {
-    background-color: #333 ;
+    background-color: #333;
     display: none;
     position: fixed;
     top: 0;
@@ -259,17 +246,20 @@ label {
     bottom: 0;
     z-index: 21;
 
-  }
-  #starSuperContainer {
+}
+
+#starSuperContainer {
     width: 100vw;
     height: 70vh;
     position: relative;
-  }
-  #starContainer {
+}
+
+#starContainer {
     width: 100%;
     height: 100%;
-  }
-  #starFade {
+}
+
+#starFade {
     width: 100%;
     height: 100%;
     background: -webkit-linear-gradient(transparent, #333);
@@ -282,13 +272,15 @@ label {
     /* Standard syntax */
     position: absolute;
     top: 0;
-  }
-  .star {
+}
+
+.star {
     background-color: #fff;
     border-radius: 50%;
     position: fixed;
-  }
-  .fireworkContainer {
+}
+
+.fireworkContainer {
     /*width:20px;
                   height:20px;*/
     margin-top: -4px;
@@ -310,8 +302,9 @@ label {
     /*-webkit-box-shadow: 0 8px 6px -6px red;
                   -moz-box-shadow: 0 8px 6px -6px red;
                   box-shadow: 0 8px 6px -6px red;*/
-  }
-  .fireworkContainer * {
+}
+
+.fireworkContainer * {
     -o-transition: all .8s linear, opacity .1s linear;
     -moz-transition: all .8s linear, opacity .1s linear;
     -webkit-transition: all .8s linear, opacity .1s linear;
@@ -325,14 +318,16 @@ label {
     -webkit-transform-origin: bottom center;
     -ms-transform-origin: bottom center;
     transform-origin: bottom center;
-  }
-  #fireworksContainer {
+}
+
+#fireworksContainer {
     position: fixed;
     bottom: -100px;
     display: table;
     left: 10px;
-  }
-  * {
+}
+
+* {
     -webkit-user-select: none;
     /* Chrome all / Safari all */
     -moz-user-select: none;
@@ -340,8 +335,9 @@ label {
     -ms-user-select: none;
     /* IE 10+ */
     user-select: none;
-  }
-  .light {
+}
+
+.light {
     border-radius: 50%;
     opacity: .4;
     -webkit-filter: blur(40px);
@@ -354,20 +350,37 @@ label {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
 
 /* paysage */
 @media screen and (orientation: landscape) {
+    @keyframes animSun {
+        0% {
+            transform: translate(-50%, 200%);
+        }
+    
+        50% {
+            transform: translate(40%, -100%);
+    
+        }
+    
+        100% {
+            transform: translate(130%, 200%);
+        }
+    }
+    
     header {
         height: 30px;
 
     }
-label{
-    top: 43%;
-}
-#projectContainer {
-    z-index: 23;
-}
+
+    label {
+        top: 43%;
+    }
+
+    #projectContainer {
+        z-index: 23;
+    }
 
     #presentation {
         position: absolute;
@@ -424,7 +437,7 @@ label{
         width: 48% !important;
         left: 25%;
         top: 10px;
-        
+
     }
 
     .feuilles {
@@ -462,7 +475,8 @@ label{
     ul {
         font-size: 1.4rem;
     }
-    #logo3{
+
+    #logo3 {
         z-index: 25;
     }
 }
@@ -471,7 +485,8 @@ label{
     #flipBook {
         top: 80px;
     }
-    label{
+
+    label {
         bottom: 100px;
     }
 
@@ -577,9 +592,11 @@ label{
     #lo {
         height: 800px;
     }
-.check{
-    bottom: 20px
-}
+
+    .check {
+        bottom: 20px
+    }
+
     #logo2 {
         height: 600px;
         width: 600px;
