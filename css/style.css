@@ -504,20 +504,20 @@ label {
             bottom: 10%;
             left: -30%;
         }
-    
+
         50% {
             bottom: 82%;
             left: 27%;
-    
+
         }
-    
+
         100% {
             bottom: 10%;
             left: 70%;
-    
+
         }
     }
-    
+
     #flipBook {
         top: 80px;
     }
@@ -681,9 +681,10 @@ label {
 }
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
-    #soleil{
-        width: 300px ;
+    #soleil {
+        width: 300px;
     }
+
     #lo {
         height: 800px;
     }
@@ -769,9 +770,10 @@ label {
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-#soleil{
-    width: 350px;
-}
+    #soleil {
+        width: 350px;
+    }
+
     #pp {
         background: radial-gradient(closest-side, white, #09577A);
         height: 75%;
@@ -857,10 +859,10 @@ label {
 @media screen and (min-width: 1300px) and (orientation: landscape) {
 
     #logo2 {
-        height: 300px;
-        width: 300px;
+        height: 700px;
+        width: 700px;
         left: 300px;
-        top: 30px;
+        top: 100px;
     }
 
     #lo {
@@ -869,14 +871,28 @@ label {
 
     #flipBook {
         width: 45% !important;
-        left: 305px;
-        top: 10px;
+        left: 610px;
+        top: 150px;
     }
 
     h1 {
-        left: 15px;
+        font-size: 4rem;
+        left: 70px;
+        top: 300px;
+
     }
 
+    h2 {
+        font-size: 5rem;
+        top: 50px;
+    }
+h3{
+    top: 50px;
+    font-size: 5rem;
+}
+ul{
+    font-size: 4rem;
+}
     #philippe {
         top: 50px;
         font-size: 2 rem;
