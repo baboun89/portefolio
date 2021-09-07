@@ -42,7 +42,7 @@ body {
     }
 
     50% {
-        bottom: 90%;
+        bottom: 82%;
         left: 20%;
 
     }
@@ -370,7 +370,7 @@ label {
         }
 
         50% {
-            bottom: 90%;
+            bottom: 80%;
             left: 32%;
         }
 
@@ -499,6 +499,25 @@ label {
 }
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: -30%;
+        }
+    
+        50% {
+            bottom: 82%;
+            left: 27%;
+    
+        }
+    
+        100% {
+            bottom: 10%;
+            left: 70%;
+    
+        }
+    }
+    
     #flipBook {
         top: 80px;
     }
@@ -528,6 +547,34 @@ label {
 }
 
 @media screen and (min-width: 569px) and (orientation: landscape) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: -30%;
+        }
+
+        25% {
+            bottom: 60%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 36%;
+        }
+
+        75% {
+            bottom: 70%;
+            left: 70%;
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
     #flipBook {
         left: 170px;
     }
@@ -565,6 +612,34 @@ label {
 }
 
 @media screen and (min-width: 767px) and (orientation: landscape) {
+    @keyframes animSun {
+        0% {
+            bottom: -20%;
+            left: -30%;
+        }
+
+        25% {
+            bottom: 60%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 40%;
+        }
+
+        75% {
+            bottom: 70%;
+            left: 70%;
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
     h1 {
         left: 20px;
     }
@@ -606,6 +681,9 @@ label {
 }
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
+    #soleil{
+        width: 300px ;
+    }
     #lo {
         height: 800px;
     }
@@ -691,7 +769,9 @@ label {
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-
+#soleil{
+    width: 350px;
+}
     #pp {
         background: radial-gradient(closest-side, white, #09577A);
         height: 75%;
