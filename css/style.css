@@ -752,6 +752,7 @@ label {
 
     #flipBook {
         width: 100% !important;
+        top: 50px;
     }
 
     #philippe {
@@ -823,7 +824,7 @@ label {
 
     #flipBook {
         width: 59% !important;
-        left: 177px;
+        left: 175px;
         top: 50px;
     }
 
@@ -970,9 +971,9 @@ label {
     }
 
     h1 {
-        font-size: 4rem;
-        left: 70px;
-        top: 300px;
+        font-size: 2.2rem;
+        left: 20px;
+        top: 100px;
 
     }
 
@@ -991,8 +992,8 @@ label {
     }
 
     #philippe {
-        top: 50px;
-        font-size: 2 rem;
+        top: 40px;
+        font-size: 1.4rem;
     }
 
     .feuilles {
@@ -1007,7 +1008,7 @@ label {
     #phil {
         top: 50px;
         right: 19%;
-        font-size: 5rem;
+        font-size: rem;
     }
 
     label {
@@ -1044,6 +1045,7 @@ label {
 
         }
     }
+
     #soleil {
         width: 500px;
     }
@@ -1054,13 +1056,15 @@ label {
 
     #flipBook {
         width: 45% !important;
-        left: 420px;
+        left: 425px;
         top: 40px;
     }
 
-    h2,h3 {
+    h2,
+    h3 {
         font-size: 8rem;
     }
+
     #logo2 {
         height: 500px;
         width: 500px;
@@ -1068,5 +1072,15 @@ label {
         top: -10px;
     }
 
+    #philippe {
+        font-size: 2.4rem;
+
+    }
+
+     h1  {
+        font-size: 3.5rem;
+        left: 8%;
+        top: 150px;
+    }
 
 }
