@@ -998,7 +998,7 @@ label {
 
     .feuilles {
         width: 200% !important;
-        margin-left: 18.7%;
+        /* margin-left: 18.7%; */
     }
 
     #feuille1 h1 {
