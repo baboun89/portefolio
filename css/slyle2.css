@@ -31,20 +31,18 @@ body {
 
 }
 
-h1 {
-
-    font-size: 0.8rem;
-}
 
 #phil {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 
 }
 
 h1 {
     position: absolute;
     top: 40%;
-    left: 5px;
+    left: 15px;
+
+
     font-size: 1.2rem;
 }
 
@@ -72,7 +70,7 @@ h1 {
 
     h1 {
         font-size: 1.5rem;
-        left: 20px;
+        left: 30px;
     }
 
     #phil {
@@ -89,12 +87,13 @@ h1 {
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
     h1 {
+        left: 5px;
         font-size: 1.4rem;
     }
 
     #phil {
         width: 80%;
-        font-size: 1rem;
+        font-size: 0.8rem;
         left: 20px;
         top: 20px;
     }
@@ -127,8 +126,8 @@ h1 {
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
     h1 {
-        font-size: 2.8rem;
-        left: 70px;
+        font-size: 2.5rem;
+        left: 40px;
     }
 
     #phil {
@@ -162,8 +161,10 @@ h1 {
         top: 200px;
         width: 70%;
     }
-    h1{
-        left: 75;
+
+    h1 {
+        font-size: 3rem;
+        left: 50px;
     }
 }
 
@@ -174,6 +175,11 @@ h1 {
     }
 
     h1 {
-        left: 75px;
+        left: 120px;
+        ;
     }
+#phil{
+    font-size: 1rem;
+    left: 50px;
+}
 }
