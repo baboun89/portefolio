@@ -29,11 +29,18 @@ body {
 
 }
 
+#phili {
+    left: 5px;
+    top: 50px;
+    position: absolute;
+    font-size: 0.5rem;
+
+}
 
 h1 {
     position: absolute;
-    top: 40%;
-    left: 15px;
+    top: -15%;
+    left: 20px;
     font-size: 1rem;
     margin: 0;
 }
@@ -41,26 +48,11 @@ h1 {
 #phil {
     width: 90%;
     position: absolute;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     left: 10px;
-    top: 20%;
+    top: 5%;
 }
 
-.fin {
-    left: 50%;
-    top: 70%;
-}
-
-.point {
-    text-decoration: none;
-    color: black;
-}
-
-#geek {
-    position: absolute;
-    right: 14px;
-    top: 20%;
-}
 
 @media screen and (orientation: landscape) {
     #feuilles {
@@ -74,10 +66,16 @@ h1 {
     }
 
     #phil {
-        top: 70px;
+        top: 20px;
         width: 80%;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         left: 30px;
+    }
+
+    #phili {
+        font-size: 0.7rem;
+        top: 100px;
+        width: 95%;
     }
 
     #logo1 {
@@ -87,25 +85,27 @@ h1 {
         left: -22%;
     }
 
-    #geek {
-        right: 20px;
-    }
 
 }
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
     h1 {
-        left: 5px;
+        top: -30px;
+        left: 10px;
         font-size: 1.4rem;
     }
 
     #phil {
         width: 80%;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         left: 20px;
         top: 40px;
     }
 
+    #phili {
+        top: 70px;
+        font-size: 0.5rem;
+    }
 }
 
 @media screen and (min-width: 569px) and (orientation: landscape) {
@@ -115,10 +115,14 @@ h1 {
     }
 
     #phil {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
         top: 60px;
     }
 
+    #phili {
+        top: 100px;
+        font-size: 0.8rem;
+    }
 
     #geek {
         right: 22px;
@@ -138,31 +142,29 @@ h1 {
     #logo1 {
         left: -18%;
     }
-
-    #geek {
-        right: 25px;
-    }
-
 }
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
     h1 {
+        top: -80px;
         font-size: 2.5rem;
         left: 40px;
     }
 
     #phil {
-        font-size: 2rem;
+        left: 40px;
+        font-size: 1rem;
     }
 
-    #geek {
+    #phili {
+        font-size: 1rem;
         right: 30px;
+        top: 150px;
     }
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
     #feuilles {
-        
         width: 100%;
     }
 
@@ -173,9 +175,12 @@ h1 {
 
     #phil {
         top: 100px;
-        font-size: 2.5rem;
+        font-size: 1.4rem;
     }
-
+#phili{
+    top: 200px;
+    font-size: 1.4rem;
+}
     #logo1 {
         top: 100px;
         left: -260px
@@ -193,11 +198,13 @@ h1 {
         left: 50px;
     }
 
-    #geek {
-        right: 40px;
-    }
 
     #phil {
+        font-size: 1.2rem;
+    }
+
+    #phili {
+        top: 200px;
         font-size: 1.2rem;
     }
 
@@ -224,6 +231,10 @@ h1 {
         left: 50px;
     }
 
+    #phili {
+        top: 250px;
+        font-size: 1.7rem;
+    }
 
     #geek {
         right: 50px;
