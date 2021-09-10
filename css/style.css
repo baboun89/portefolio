@@ -459,7 +459,8 @@ label {
     #flipBook {
 
         width: 48% !important;
-        left: 25%;
+        left: 50%;
+        transform: translateX(-50%);
         top: 10px;
 
     }
@@ -582,9 +583,6 @@ label {
         }
     }
 
-    #flipBook {
-        left: 170px;
-    }
 
     #philippe {
         font-size: 1rem;
@@ -663,7 +661,6 @@ label {
 
     #flipBook {
         width: 42% !important;
-        left: 235px;
     }
 
     #philippe {
@@ -824,7 +821,6 @@ label {
 
     #flipBook {
         width: 59% !important;
-        left: 175px;
         top: 50px;
     }
 
@@ -966,7 +962,6 @@ label {
 
     #flipBook {
         width: 40% !important;
-        left: 325px;
         top: 20px;
     }
 
@@ -1056,7 +1051,6 @@ label {
 
     #flipBook {
         width: 45% !important;
-        left: 425px;
         top: 40px;
     }
 

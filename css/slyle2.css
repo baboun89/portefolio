@@ -182,7 +182,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1300px) and (orientation: landscape) {
+@media screen and (min-width: 1300px)  {
     #feuilles {
         width: 70%;
         
@@ -208,7 +208,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1900px) and (orientation: landscape) {
+@media screen and (min-width: 1900px) {
     #logo1 {
         top: 200px;
         left: -380px;
