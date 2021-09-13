@@ -177,10 +177,12 @@ h1 {
         top: 100px;
         font-size: 1.4rem;
     }
-#phili{
-    top: 200px;
-    font-size: 1.4rem;
-}
+
+    #phili {
+        top: 200px;
+        font-size: 1.4rem;
+    }
+
     #logo1 {
         top: 100px;
         left: -260px
@@ -189,8 +191,10 @@ h1 {
 
 @media screen and (min-width: 1300px) and (orientation: landscape) {
     #feuilles {
+        padding: auto;
+        margin-top: -4%;
         width: 70%;
-        
+
     }
 
     h1 {
@@ -209,6 +213,7 @@ h1 {
     }
 
     #logo1 {
+        top: 30px;
         width: 100px;
         height: 100px;
         left: -240px;
@@ -217,7 +222,7 @@ h1 {
 
 @media screen and (min-width: 1900px) and (orientation: landscape) {
     #logo1 {
-        top: 200px;
+        top: 100px;
         left: -380px;
     }
 
@@ -239,5 +244,6 @@ h1 {
     #geek {
         right: 50px;
     }
+
 
 }

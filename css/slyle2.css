@@ -184,6 +184,8 @@ h1 {
 
 @media screen and (min-width: 1300px)  {
     #feuilles {
+    padding: auto;
+    margin-top: -4%;
         width: 70%;
         
     }
@@ -228,5 +230,5 @@ h1 {
     #geek {
         right: 50px;
     }
-
+    
 }
