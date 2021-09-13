@@ -418,13 +418,13 @@ label {
         top: 80px;
     }
 
-    #experience {
+    #formation {
         position: absolute;
         right: 130px;
         top: 30px;
     }
 
-    #formation {
+    #experience {
         position: absolute;
         right: 130px;
         top: 80px;
@@ -992,8 +992,8 @@ label {
     }
 
     .feuilles {
+        
         width: 200% !important;
-        /* margin-left: 18.7%; */
     }
 
     #feuille1 h1 {
