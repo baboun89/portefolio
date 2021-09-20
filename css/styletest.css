@@ -1,84 +1,69 @@
-body {
+body{
   margin: 0;
-    /*la couleur defont de base */
-  background-color: #2c3e50;
-  animation-name: color;
-  /*la durée d'un cycle de l'animatio*/
-  animation-duration: 10s;
-  /*l'animation va etre de la meme vitesse*/
-  animation-timing-function: linear;
-  /*pas de temp avant le commencement de l'animation*/
-  animation-delay: 0s;
-  /*animation a l'infini*/
-  animation-iteration-count: infinite;
+}
 
+.navbar{
+  /* background-color: black; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 
-.soleil {
-
-  /*largeur du soleil*/
-  width: 180px;
-  /*hauteur du solei*/
-  height: 180px;
-  /*le rendre arondit*/
-  border-radius: 50%;
-  /*pour faire notre animation-on lui donne un nom*/
-  animation-name: animSun;
-  /*definie la durée d'un cycle de l'animation*/
-  animation-duration: 10s;
-  /*l'animation va etre de la meme vitesse*/
-  animation-timing-function: cubic-bezier(1, .01, 0, 1);
-  /*pas de delai avant le commencement de l'animation*/
-  animation-delay: 0s;
-  /*animation a l'infini*/
-  animation-iteration-count: infinite;
-  /* animation-direction: ; */
-  /*l'animation va etre de la meme vitesse*/
-  animation-timing-function: linear;
+.icon{
+  fill: red;
+  cursor: pointer;
 }
 
-@keyframes animSun {
-  0% {
-    transform: translate(-100%, 200%);
-  }
-  50% {
-    transform: translate(50%,-50%);
-
-  }
-  100% {
-    transform:  translate(100%, 200%);
-  }
+.navbar input, .nav-menu, .dropdown{
+  display: none;
 }
 
-@keyframes color {
-  0% {
-    /*la couleur du ciel à 0% du cycle*/
-    background: #2c3e50
+[id^=btn]:checked + ul{
+  display: block;
+}
+
+.nav-menu{
+  background-color: black;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+}
+
+.nav-item a, .drop-item a, .show{
+  color: green;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 1.2rem;
+}
+
+.nav-menu a:hover, .show:hover{
+  color: red;
+}
+
+@media screen and (min-width: 768px){
+  .icon{
+      display: none;
+  }
+  .nav-menu{
+      display: initial;
+      position: static;
+  }
+  .nav-item{
+      display: inline-block;
+      margin-left: 20px;
+      position: relative;
+  }
+  .dropdown{
+      position: absolute;
+      background-color: black;
+      top: 70px;
+      right: 0;
+      padding-right: 40px;
+      width: max-content;
   }
 
-  10% {
-    /*la couleur du ciel à 10% du cycle*/
-    background: pink;
-  }
-
-  30% {
-    /*la couleur du ciel à 30% du cycle*/
-    background: #3498db;
-  }
-
-  70% {
-    /*la couleur du ciel à 70% du cycle*/
-    background: #3498db;
-  }
-
-  90% {
-    /*la couleur du ciel à 90% du cycle*/
-    background: pink;
-  }
-
-  100% {
-    /*la couleur du ciel à 100% du cycle*/
-    background: #2c3e50;
-  }
 }

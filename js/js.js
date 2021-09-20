@@ -1,9 +1,9 @@
 new FlipBook('flipBook', {
   canClose: true,
 })
-let check = document.querySelector("input")
+let check = document.querySelector("#case")
 let soleil = document.querySelector(".soleil")
-let label = document.querySelector("label")
+let label = check.parentElement;
 let boutton = sessionStorage.getItem('click')
 let projectContainer = document.querySelector("#projectContainer")
 if (boutton == 1) {

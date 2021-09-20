@@ -8,19 +8,71 @@
 }
 
 header {
-    height: 10px;
-    margin-top: 10px;
+    height: 100px;
+    margin: 10px;
 
 }
 
 body {
-    background: radial-gradient(closest-side, white, #09577A);
+    background: radial-gradient(closest-side, #f0456f, #09577A);
     overflow: hidden;
     min-height: 100vh;
     margin: 0;
     position: relative;
 
 }
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.icon {
+    fill: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: -50px;
+}
+
+.navbar input,
+.nav-menu,
+.dropdown {
+    display: none;
+}
+
+[id^=btn]:checked+ul {
+    display: block;
+}
+
+.nav-menu {
+    background: radial-gradient(closest-side, #040B50, #09577A);
+    border-radius: 30%;
+    width: 200px;
+    margin-top: 180px;
+    z-index: 50;
+    ;
+}
+
+.nav-item a,
+.drop-item a,
+.show {
+    color: white;
+    text-decoration: none;
+    line-height: 90px;
+    font-size: 2rem;
+    font-family: 'Charm', cursive;
+}
+
+.nav-menu a:hover,
+.show:hover {
+    font-size: 2.5rem;
+    color: #f0456f;
+}
+
 
 .soleil {
     position: absolute;
@@ -58,14 +110,14 @@ ul {
     font-size: 0.9rem;
     padding-left: 0;
     margin: auto;
-    text-align: center;
 }
 
 ul li {
-    display: inline;
+
     text-align: center;
     margin-left: 10px;
     text-decoration: none;
+
 }
 
 img {
@@ -79,9 +131,9 @@ img {
 }
 
 #logo1 {
+    
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
     animation-direction: alternate;
     animation-duration: 5s;
 }
@@ -126,28 +178,19 @@ h1 {
     right: 20px;
 }
 
-#logo3 {
-    z-index: 6;
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    left: -90px;
-    top: -90px;
-    z-index: 22;
-}
 
 h2 {
     top: 10px;
-    font-size: 3.3rem;
+    font-size: 4rem;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
     text-shadow: 2px 2px black;
-
+    
 }
 
 h3 {
-    top: 20px;
+    top: 30px;
     font-size: 4.8rem;
     margin-top: 0;
     margin-bottom: 0;
@@ -157,11 +200,12 @@ h3 {
 
 h2,
 h3 {
+    margin-top: 20px;
     color: var(--color1);
     position: relative;
     z-index: 5;
     text-align: center;
-
+    font-family: 'Charm', cursive;
 }
 
 .feuilles {
@@ -501,9 +545,6 @@ label {
         font-size: 1.4rem;
     }
 
-    #logo3 {
-        z-index: 25;
-    }
 }
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
@@ -845,12 +886,6 @@ label {
         font-size: 3rem;
     }
 
-    #logo3 {
-        height: 80px;
-        width: 80px;
-        top: 0;
-        left: 5px;
-    }
 
     #logo2 {
         height: 400px;
@@ -992,7 +1027,7 @@ label {
     }
 
     .feuilles {
-        
+
         width: 200% !important;
     }
 
@@ -1071,10 +1106,38 @@ label {
 
     }
 
-     h1  {
+    h1 {
         font-size: 3.5rem;
         left: 8%;
         top: 150px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .icon {
+        
+        display: none;
+
+    }
+
+    .nav-menu {
+        display: initial;
+        position: static;
+    }
+
+    .nav-item {
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+
+    .dropdown {
+        position: absolute;
+        background-color: black;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
     }
 
 }
