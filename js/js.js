@@ -13,15 +13,14 @@ if (boutton == 1) {
 
 } else {
     label.style.opacity = "0";
-
 }
 check.addEventListener("click", function () {
     if (check.checked == true) {
         projectContainer.style.display = "initial"
         initialize();
-
-
+        
     } else {
+        document.getElementById("soleil").style.src ="images/lune.png"
         projectContainer.style.display = "none"
 
 

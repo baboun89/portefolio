@@ -41,6 +41,7 @@ body {
 .nav-menu {
     background: white;
     align-items: center;
+
 }
 
 .nav-item a,
@@ -49,8 +50,7 @@ body {
     color: rgb(242, 28, 28);
     line-height: 90px;
     font-size: 0.8rem;
-    text-shadow: 1px 50 1px black 50%;
-
+    text-shadow: 1px 1px  1px  black ;
 }
 
 .nav-menu a:hover,
@@ -71,6 +71,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     display: none;
+    z-index: 100;
 
 }
 
@@ -1178,7 +1179,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     .navbar ul {
-        width: 90%;
+        width: 80%;
         height: 100px;
     }
 
