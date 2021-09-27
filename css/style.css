@@ -1147,13 +1147,16 @@ input[type="checkbox"]:checked~.check:after {
 
     #flipBook {
         width: 55% !important;
-        top: 100px;
+        top: 150px;
         left: 950px;
     }
 
     h2,
     h3 {
-        font-size: 7rem;
+        font-size: 5rem;
+        left: 150px;
+        top: 70px;
+        margin-left: 100px;
     }
 
     #logo2 {
