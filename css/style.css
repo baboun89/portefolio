@@ -1,11 +1,4 @@
 /* mobile */
-:root {
-    font-size: 11px;
-    --color1: white;
-    --color2: #09577A;
-    --color3: #1D87F2;
-    --color4: #040B50;
-}
 
 header {
     height: 100px;
@@ -14,7 +7,7 @@ header {
 }
 
 body {
-    background: radial-gradient(closest-side, #f0456f, #09577A);
+    background: radial-gradient(closest-side, white, #1D87F2);
     overflow: hidden;
     min-height: 100vh;
     margin: 0;
@@ -31,7 +24,7 @@ body {
 .icon {
     fill: white;
     cursor: pointer;
-    
+
 }
 
 .navbar input,
@@ -42,27 +35,29 @@ body {
 
 [id^=btn]:checked+ul {
     display: inline-flex;
+    padding-left: 0;
 }
 
 .nav-menu {
-    background: radial-gradient(closest-side, #1D87F2, white);
-    border-radius: 30%;
-    ;
+    background: white;
+    align-items: center;
 }
 
 .nav-item a,
 .drop-item a,
 .show {
-    color: #1D87F2;
+    color: rgb(242, 28, 28);
     line-height: 90px;
-    font-size: 1.4rem;
-    
-    
+    font-size: 0.8rem;
+    text-shadow: 1px 50 1px black 50%;
+
 }
 
 .nav-menu a:hover,
-.show:hover {
-    color: #f0456f;
+.show:hover,
+.icon:hover {
+    color: maroon;
+
 }
 
 
@@ -99,23 +94,27 @@ body {
 }
 
 .navbar ul {
+    width: 100%;
+    height: 50px;
     position: absolute;
-    padding-left: 0;
-    top: 35px;
     left: 0;
+    top: 55px;
+    justify-content: center;
     z-index: 25;
-    
+
 }
 
 ul li {
     text-align: center;
     margin-left: 7px;
     list-style: none;
-  }
-  a{
-      text-decoration: none;
-      
-  }
+
+}
+
+a {
+    text-decoration: none;
+
+}
 
 img {
     vertical-align: middle;
@@ -128,9 +127,9 @@ img {
 }
 
 #logo1 {
-    
+
     display: block;
-    
+
     animation-direction: alternate;
     animation-duration: 5s;
 }
@@ -147,7 +146,8 @@ img {
 
 #flipBook {
     left: 0;
-    top: 20px;
+    bottom: 0;
+    top: 50px;
     z-index: 25;
 }
 
@@ -155,16 +155,16 @@ h1 {
     position: absolute;
     top: 70px;
     left: 10px;
-    font-size: 1.5rem;
-    
+    font-size: 1rem;
+
 
 }
 
 #philippe {
     width: 70%;
     position: absolute;
-    font-size: 1rem;
-    top: 40px;
+    font-size: 0.7rem;
+    top: 10px;
     right: 20%;
 }
 
@@ -179,32 +179,31 @@ h1 {
 
 h2 {
     top: 10px;
-    font-size: 3rem;
-    margin-top: 0;
+    font-size: 2.3rem;
     margin-bottom: 0;
     text-align: center;
-    text-shadow: 2px 2px black;
-    
-    
+    text-shadow: 5px 5px 2px black;
+
+
 }
 
 h3 {
     top: 30px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 0;
-    text-shadow: 2px 2px black;
-    
+    text-shadow: 5px 5px 2px black;
+
 }
 
 h2,
 h3 {
-    margin-top: 50px;
-    color: var(--color1);
+    color: white;
     position: relative;
     z-index: 5;
     text-align: center;
 }
+
 .feuilles {
 
     display: flex;
@@ -435,6 +434,22 @@ input[type="checkbox"]:checked~.check:after {
 
     }
 
+    .navbar ul {
+        width: 75%;
+        height: 50px;
+        margin-left: 80px;
+        top: -30px;
+        padding-right: 5px;
+    }
+
+    .nav-menu {
+        margin-top: 40px;
+
+
+
+    }
+
+
     label {
         top: 43%;
     }
@@ -468,24 +483,26 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     h1 {
-        left: 5px;
+        left: 10px;
+        font-size: 0.9rem;
     }
 
     h2 {
-        font-size: 2.5rem;
-        top: -40px;
+        font-size: 2rem;
+        top: 40px;
     }
 
     h3 {
-        display: inline;
-        font-size: 2rem;
-        top: -40px;
+        font-size: 1.8rem;
+        top: 40px;
     }
 
     h2,
     h3 {
         display: inline;
-        margin-left: 40px;
+        margin-left: 30px;
+        z-index: 30;
+
     }
 
     #lo {
@@ -498,7 +515,7 @@ input[type="checkbox"]:checked~.check:after {
         width: 48% !important;
         left: 50%;
         transform: translateX(-50%);
-        top: 10px;
+        top: 95px;
 
     }
 
@@ -513,7 +530,7 @@ input[type="checkbox"]:checked~.check:after {
         width: 70%;
         top: 20px;
         right: 20px;
-        font-size: 0.9rem;
+        font-size: 0.5rem;
     }
 
     #phil {
@@ -531,11 +548,16 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     #logo2 {
-        left: 100px;
+        width: 300px;
+        height: 300px;
+        left: 150px;
+        top: 50px;
     }
 
-    ul {
-        font-size: 1.4rem;
+    ul li {
+        margin-left: 30px;
+        list-style: none;
+        margin-right: 15px;
     }
 
 }
@@ -571,11 +593,11 @@ input[type="checkbox"]:checked~.check:after {
     h1 {
         top: 80px;
         left: 10px;
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     #philippe {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     #phil {
@@ -586,6 +608,15 @@ input[type="checkbox"]:checked~.check:after {
         left: 20px;
         top: 100px;
     }
+
+    .nav-item a,
+    .drop-item a,
+    .show {
+        font-size: 1.6rem;
+        margin-left: 5px;
+
+    }
+
 }
 
 @media screen and (min-width: 569px) and (orientation: landscape) {
@@ -619,7 +650,7 @@ input[type="checkbox"]:checked~.check:after {
 
 
     #philippe {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 
     #phil {
@@ -641,13 +672,21 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     h2 {
-        font-size: 3.3rem;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 3rem;
+
+        font-size: 2rem;
     }
 
+    h2 h3 {
+        margin-left: 100px;
+    }
+
+    .nav-item a {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 767px) and (orientation: landscape) {
@@ -757,14 +796,28 @@ input[type="checkbox"]:checked~.check:after {
         top: 10px;
     }
 
+    .nav-item a,
+    .drop-item a,
+    .show {
+        font-size: 1.8rem;
+        align-content: center;
+
+    }
+
+    ul li {
+        margin-left: auto;
+    }
+
     ul {
         font-size: 2.3rem;
+
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 2.2rem;
         left: 20px;
-        top: 25%;
+        top: 30%;
+    
     }
 
     h3 {
@@ -778,16 +831,18 @@ input[type="checkbox"]:checked~.check:after {
 
     h2,
     h3 {
-        font-size: 8rem;
+        font-size: 5rem;
     }
 
     #flipBook {
-        width: 100% !important;
-        top: 50px;
+        width: 90% !important;
+        top: 55px;
+        left: 40px;
     }
 
     #philippe {
-        font-size: 2.5rem;
+        text-align: left;
+        font-size: 1.4rem;
     }
 
     .feuilles {
@@ -799,7 +854,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     #phil {
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 }
 
@@ -838,30 +893,40 @@ input[type="checkbox"]:checked~.check:after {
         width: 300px;
     }
 
-    #pp {
-        background: radial-gradient(closest-side, white, #09577A);
+    .nav-item a {
+
+        font-size: 1.8rem;
+    }
+
+    .navbar ul {
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    /* #pp {
+        background:   white, #1D87F2;
         height: 75%;
         position: absolute;
         right: 10%;
         left: 10%;
         top: 12%;
     }
-
+ */
     body {
         position: relative;
         height: 100%;
-        background-image: linear-gradient(to right, var(--color4), var(--color4) 50%, var(--color3)50%);
+        background-image: linear-gradient white, #1D87F2;
     }
 
     #flipBook {
-        width: 59% !important;
-        top: 50px;
+        width: 55% !important;
+        top: 90px;
+        left: 500px;
     }
 
     .feuilles {
         width: 100% !important;
         margin-top: 35px;
-        margin-left: 5px;
     }
 
     #philippe {
@@ -897,7 +962,7 @@ input[type="checkbox"]:checked~.check:after {
     h3 {
 
         right: 20px;
-        font-size: 4.1rem;
+        font-size: 3.6rem;
     }
 
     label {
@@ -978,10 +1043,10 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     #logo2 {
-        height: 300px;
-        width: 300px;
-        left: 300px;
-        top: 0;
+        height: 400px;
+        width: 400px;
+        left: 400px;
+        top: 100px;
     }
 
     #lo {
@@ -990,7 +1055,8 @@ input[type="checkbox"]:checked~.check:after {
 
     #flipBook {
         width: 40% !important;
-        top: 20px;
+        top: 150px;
+        left: 650px;
     }
 
     h1 {
@@ -1002,12 +1068,10 @@ input[type="checkbox"]:checked~.check:after {
 
     h2 {
         font-size: 5rem;
-        top: -30px;
     }
 
     h3 {
-        top: -30px;
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     ul {
@@ -1079,19 +1143,19 @@ input[type="checkbox"]:checked~.check:after {
 
     #flipBook {
         width: 45% !important;
-        top: 40px;
+        top: 200px;
     }
 
     h2,
     h3 {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
     #logo2 {
-        height: 500px;
-        width: 500px;
-        left: 300px;
-        top: -10px;
+        height: 600px;
+        width: 600px;
+        left: 450px;
+        top: 200px;
     }
 
     #philippe {
@@ -1105,10 +1169,20 @@ input[type="checkbox"]:checked~.check:after {
         top: 150px;
     }
 
+    .navbar ul {
+        width: 90%;
+        height: 100px;
+    }
+
+    .nav-item a {
+        font-size: 3rem;
+        padding-left: 100px;
+    }
 }
+
 @media screen and (min-width: 1200px) {
     .icon {
-        
+
         display: none;
 
     }
