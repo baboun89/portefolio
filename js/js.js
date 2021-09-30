@@ -1,31 +1,33 @@
 new FlipBook('flipBook', {
     canClose: true,
 })
-let check = document.querySelector("#case")
-let soleil = document.querySelector(".soleil")
-let nuage = document.querySelector(".nav-menu")
+let check = document.querySelector("#case");
+let soleil = document.querySelector(".soleil");
+let nuage = document.querySelector(".nav-menu");
 let label = check.parentElement;
-let boutton = sessionStorage.getItem('click')
-let projectContainer = document.querySelector("#projectContainer")
+let boutton = sessionStorage.getItem('point');
+let nuit = sessionStorage.getItem('nuit');
+let projectContainer = document.querySelector("#projectContainer");
+
+
 if (boutton == 1) {
     soleil.style.display = "initial";
     nuage.style.borderRadius = "30%";
-
 } else {
     label.style.opacity = "0";
+
 }
 check.addEventListener("click", function () {
     if (check.checked == true) {
-        projectContainer.style.display = "initial"
+        projectContainer.style.display = "initial";
+        sessionStorage.setItem('nuit', 1);
+        sessionStorage.removeItem('jour');
         initialize();
-        
     } else {
-        document.getElementById("soleil").style.src ="images/lune.png"
-        projectContainer.style.display = "none"
-
-
-
-
+        document.getElementById("soleil").style.src = "images/lune.png";
+        projectContainer.style.display = "none";
+        sessionStorage.setItem('jour', 1);
+        sessionStorage.removeItem('nuit');
     }
 })
 
