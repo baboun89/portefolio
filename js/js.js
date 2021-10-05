@@ -1,3 +1,12 @@
+window.onload = () => {
+    if (sessionStorage.nuit != null){
+        document.getElementById("soleil").src = "images/lune.png";
+        projectContainer.style.display = "initial";
+        initialize();
+    } else {
+        projectContainer.style.display = "none";
+    
+}}
 new FlipBook('flipBook', {
     canClose: true,
 })
@@ -19,15 +28,16 @@ if (boutton == 1) {
 }
 check.addEventListener("click", function () {
     if (check.checked == true) {
+        document.getElementById("soleil").src = "images/soleil.png";
+        sessionStorage.setItem('jour', 1);
+        sessionStorage.removeItem('nuit');
+        projectContainer.style.display = "none";
+    } else {
+        document.getElementById("soleil").src = "images/lune.png";
         projectContainer.style.display = "initial";
         sessionStorage.setItem('nuit', 1);
         sessionStorage.removeItem('jour');
         initialize();
-    } else {
-        document.getElementById("soleil").style.src = "images/lune.png";
-        projectContainer.style.display = "none";
-        sessionStorage.setItem('jour', 1);
-        sessionStorage.removeItem('nuit');
     }
 })
 
