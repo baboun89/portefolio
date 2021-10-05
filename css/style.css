@@ -71,7 +71,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     display: none;
-    z-index: 30;
+    z-index: 24;
 
 }
 
