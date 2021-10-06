@@ -27,17 +27,17 @@ if (boutton == 1) {
 
 }
 check.addEventListener("click", function () {
+    document.getElementById("soleil").src = "images/lune.png";
+    projectContainer.style.display = "initial";
+    sessionStorage.setItem('nuit', 1);
+    sessionStorage.removeItem('jour');
+    initialize();
     if (check.checked == true) {
         document.getElementById("soleil").src = "images/soleil.png";
         sessionStorage.setItem('jour', 1);
         sessionStorage.removeItem('nuit');
         projectContainer.style.display = "none";
     } else {
-        document.getElementById("soleil").src = "images/lune.png";
-        projectContainer.style.display = "initial";
-        sessionStorage.setItem('nuit', 1);
-        sessionStorage.removeItem('jour');
-        initialize();
     }
 })
 
@@ -212,4 +212,8 @@ window.addEventListener('resize', function () {
     resizeTimer = window.setTimeout(function () {
         initialize();
     }, 100);
+});
+const burger = document.querySelector('.burger');
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
 });

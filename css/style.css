@@ -19,6 +19,54 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.burger {
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger span {
+    width: 100%;
+    height: 8px;
+    background-color: #7a4621;
+    display: block;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before,
+.burger span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 6px;
+    background-color: #f7a13c;
+    transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before {
+    transform: translateY(-12px);
+}
+
+.burger span::after {
+    transform: translateY(14px);
+
+}
+
+.burger.active span {
+    background-color: transparent;
+}
+
+.burger.active span::before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.burger.active span::after {
+    transform: translateY(0px) rotate(-45deg);
+}
 
 
 .icon {
@@ -39,7 +87,7 @@ body {
 }
 
 .nav-menu {
-    background: white;
+    background: radial-gradient(closest-side, white, rgb(212, 211, 211));
     align-items: center;
 
 }
@@ -157,16 +205,31 @@ h1 {
     top: 70px;
     left: 10px;
     font-size: 1rem;
-
+text-decoration: underline #7a4621;
 
 }
 
 #philippe {
-    width: 70%;
+    width: 80%;
     position: absolute;
     font-size: 0.7rem;
     top: 10px;
-    right: 20%;
+    right: 10%;
+}
+#philippe p{
+    margin: 0%;
+}
+#philippe ul {
+    padding-left: 0;
+    margin: 0 0 0 20px;
+    
+}
+#philippe ul li{
+text-align: left;
+}
+h4{
+    margin: 0;
+    padding: 10px 0px 5px 0px;
 }
 
 #phil {
