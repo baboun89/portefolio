@@ -75,7 +75,7 @@ body {
 }
 
 .burger:hover span {
-    background-color:  #7a4621;
+    background-color: #7a4621;
 }
 
 .burger.active span {
@@ -212,15 +212,26 @@ img {
     bottom: 0;
     top: 25px;
     z-index: 25;
-    opacity: 50%;
+    /* opacity: 50%; */
 }
 
 h1 {
     position: absolute;
-    top: 70px;
-    left: 10px;
-    font-size: 1rem;
-    text-decoration: underline #7a4621;
+    top: 20px;
+    left: 20px;
+    font-size: 0.9rem;
+}
+
+#phili {
+    width: 80%;
+    position: absolute;
+    font-size: 0.5rem;
+    top: 20px;
+    padding-left: 20px;
+}
+#form{
+    position: absolute;
+    top: -20px;
 }
 
 #philippe {
@@ -228,7 +239,8 @@ h1 {
     position: absolute;
     font-size: 0.7rem;
     top: 10px;
-    right: 10%;
+    right: 10px;
+    
 }
 
 #philippe p {
