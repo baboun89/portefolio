@@ -7,14 +7,17 @@ header {
 }
 
 body {
-    background: radial-gradient(closest-side, white, #1D87F2);
+    background: #1D87F2;
     overflow: hidden;
     min-height: 100vh;
     margin: 0;
     position: relative;
     font-family: 'roto', cursive;
 }
-input[type=text], textarea, input[type=email] {
+
+input[type=text],
+textarea,
+input[type=email] {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -22,38 +25,40 @@ input[type=text], textarea, input[type=email] {
     margin-right: 0px;
     margin-left: 0px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #1255a2;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  #geek {
+}
+
+#geek {
     position: absolute;
     right: 14px;
     top: 30%;
 }
-  input[type=submit]:hover {
+
+input[type=submit]:hover {
     background-color: #1872D9;
-  }
-  
-  .container {
-      font-size: 0.5rem;
+}
+
+.container {
+    font-size: 0.5rem;
     /* Ajouter box-sizing */
-    box-sizing : border-box;
-    border-radius:5px;
+    box-sizing: border-box;
+    border-radius: 5px;
     /* background-color:#f2f2f2; */
-    padding:20px;
+    padding: 20px;
     width: 100%;
     /* redéfinition 400 + 2*20 */
     max-width: 440px;
-    margin:0 auto;
+    margin: 0 auto;
     position: absolute;
     top: 0;
-  }
+}
 
 .navbar {
     display: flex;
@@ -152,7 +157,6 @@ input[type=text], textarea, input[type=email] {
     color: rgb(242, 28, 28);
     line-height: 90px;
     font-size: 0.8rem;
-    text-shadow: 1px 1px 1px black;
 }
 
 .nav-menu a:hover,
@@ -208,7 +212,7 @@ input[type=text], textarea, input[type=email] {
 }
 
 ul li {
-    text-align: center;
+    text-align: left;
     margin-left: 7px;
     list-style: none;
 
@@ -227,6 +231,7 @@ img {
     height: 500px;
     position: relative;
     overflow: hidden;
+
 }
 
 #logo1 {
@@ -250,112 +255,49 @@ img {
 #flipBook {
     left: 0;
     bottom: 0;
-    top: 25px;
+    top: 60px;
     z-index: 25;
     opacity: 80%;
+
 }
 
-h1 {
-    position: absolute;
-    top: 0px;
-    left: 20px;
-    font-size: 0.7rem;
-}
-
-#phili {
-    width: 80%;
-    position: absolute;
+.texte {
     font-size: 0.5rem;
-    top: 20px;
-    padding-left: 20px;
-}
-#form{
     position: absolute;
-    top: -20px;
-}
-
-#philippe {
+    top: -15px;
     width: 80%;
-    position: absolute;
-    font-size: 0.7rem;
-    top: 10px;
-    right: 10px;
-    
-}
-
-#philippe p {
-    margin: 0%;
-}
-
-#philippe ul {
-    padding-left: 0;
-    margin: 0 0 0 20px;
-
-}
-
-#philippe ul li {
-    text-align: left;
-}
-
-h4 {
-    margin: 0;
-    padding: 10px 0px 5px 0px;
-}
-
-#phil {
-    width: 40%;
-    position: absolute;
-    font-size: 1.1rem;
-    top: 30px;
-    right: 20px;
-}
-
-
-h2 {
-    top: 10px;
-    font-size: 2.3rem;
-    margin-bottom: 0;
     text-align: center;
-    text-shadow: 5px 5px 2px black;
-
-
+    margin: 15px;
 }
 
+.texte h2 {
+    font-size: 0.5rem;
+    color: black;
+    top: 0;
+
+}
+#formulaire{
+    position: absolute;
+    bottom: -50px;
+    margin-left: 30px;
+    color: red;
+}
 h3 {
     top: 30px;
-    font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 0;
-    text-shadow: 5px 5px 2px black;
-
+    
 }
 
 h2,
 h3 {
+    font-size: 2.2rem;
     color: white;
     position: relative;
     z-index: 5;
     text-align: center;
 }
 
-.feuilles {
-
-    display: flex;
-
-}
-
-.feuille {
-
-    flex-direction: row;
-
-}
-
-.feuille h1 {
-    top: 15%;
-    left: 2%;
-    font-size: 1.7rem;
-
-}
 
 input[type="checkbox"] {
     -webkit-appearance: none;
@@ -737,9 +679,11 @@ input[type="checkbox"]:checked~.check:after {
     #philippe {
         font-size: 0.8rem;
     }
-    #phili{
+
+    #phili {
         top: 50px;
     }
+
     #phil {
         font-size: 1.2rem;
     }
