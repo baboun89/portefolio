@@ -30,7 +30,8 @@ body {
 }
 
 #phili {
-    left: 5px;
+    width: 80% !important;
+    left: 25px;
     top: 50px;
     position: absolute;
     font-size: 0.5rem;
@@ -227,7 +228,7 @@ h1 {
     }
 
     h1 {
-        left: 120px;
+        left: 80px;
         ;
     }
 
@@ -237,6 +238,7 @@ h1 {
     }
 
     #phili {
+        left: 60px;
         top: 250px;
         font-size: 1.7rem;
     }
