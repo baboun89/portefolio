@@ -13,6 +13,7 @@ body {
     margin: 0;
     position: relative;
     font-family: 'roto', cursive;
+
 }
 
 input[type=text],
@@ -156,7 +157,7 @@ input[type=submit]:hover {
 .show {
     color: rgb(242, 28, 28);
     line-height: 90px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .nav-menu a:hover,
@@ -276,17 +277,20 @@ img {
     top: 0;
 
 }
-#formulaire{
+
+#formulaire {
     position: absolute;
     bottom: -50px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     color: red;
+
 }
+
 h3 {
     top: 30px;
     margin-top: 0;
     margin-bottom: 0;
-    
+
 }
 
 h2,
@@ -298,6 +302,11 @@ h3 {
     text-align: center;
 }
 
+#fin {
+    position: absolute;
+    top: 120px;
+    font-size: 0.7rem;
+}
 
 input[type="checkbox"] {
     -webkit-appearance: none;
@@ -518,6 +527,11 @@ input[type="checkbox"]:checked~.check:after {
         padding-right: 5px;
     }
 
+    .nav-item a {
+
+        font-size: 0.8rem;
+    }
+
     .nav-menu {
         margin-top: 40px;
 
@@ -534,29 +548,6 @@ input[type="checkbox"]:checked~.check:after {
         z-index: 23;
     }
 
-    #presentation {
-        position: absolute;
-        left: 100px;
-        top: 30px;
-    }
-
-    #competence {
-        position: absolute;
-        left: 110px;
-        top: 80px;
-    }
-
-    #formation {
-        position: absolute;
-        right: 130px;
-        top: 30px;
-    }
-
-    #experience {
-        position: absolute;
-        right: 130px;
-        top: 80px;
-    }
 
     h1 {
         left: 10px;
@@ -602,26 +593,8 @@ input[type="checkbox"]:checked~.check:after {
 
     }
 
-    #philippe {
-        width: 70%;
-        top: 20px;
-        right: 20px;
-        font-size: 0.5rem;
-    }
-
-    #phil {
-        width: 35%;
-        top: 20px;
-        right: 70px;
-        font-size: 1.6rem;
-    }
 
 
-    .feuille h1 {
-        top: 30%;
-        left: 12%;
-        font-size: 2.2rem;
-    }
 
     #logo2 {
         width: 300px;
@@ -631,9 +604,8 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     ul li {
-        margin-left: 30px;
+        margin-left: 10px;
         list-style: none;
-        margin-right: 15px;
     }
 
     .check {
@@ -670,39 +642,25 @@ input[type="checkbox"]:checked~.check:after {
         bottom: 100px;
     }
 
-    h1 {
-        top: 80px;
-        left: 10px;
-        font-size: 1.3rem;
-    }
+    #formulaire {
+        bottom: -100px;
 
-    #philippe {
-        font-size: 0.8rem;
-    }
-
-    #phili {
-        top: 50px;
-    }
-
-    #phil {
-        font-size: 1.2rem;
-    }
-
-    feuille h1 {
-        left: 20px;
-        top: 100px;
     }
 
     .nav-item a,
     .drop-item a,
     .show {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         margin-left: 5px;
 
     }
 
     .check {
         top: 630px;
+    }
+
+    #fin {
+        top: 170px;
     }
 }
 
@@ -736,27 +694,6 @@ input[type="checkbox"]:checked~.check:after {
     }
 
 
-    #philippe {
-        font-size: 0.6rem;
-    }
-
-    #phil {
-        right: 70px;
-        font-size: 2rem;
-    }
-
-    ul {
-        font-size: 2rem;
-    }
-
-    .feuille h1 {
-        font-size: 2.5rem;
-        left: 90px;
-    }
-
-    h1 {
-        left: 15px;
-    }
 
     h2 {
         font-size: 2rem;
@@ -772,7 +709,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     .nav-item a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -805,10 +742,6 @@ input[type="checkbox"]:checked~.check:after {
         }
     }
 
-    h1 {
-        left: 20px;
-    }
-
     h3 {
         left: 50px;
     }
@@ -823,25 +756,13 @@ input[type="checkbox"]:checked~.check:after {
         width: 42% !important;
     }
 
-    #philippe {
-        font-size: 1.1rem;
+    .nav-item a {
+        font-size: 1.3rem;
     }
 
-    #phil {
-        width: 30%;
-        font-size: 2rem;
-        right: 140px;
+    #fin {
+        top: 170px;
     }
-
-    .feuilles {
-        margin-left: 15%;
-        width: 70% !important;
-    }
-
-    .feuille h1 {
-        left: 150px;
-    }
-
 }
 
 @media screen and (min-width: 767px) and (orientation: portrait) {
@@ -886,25 +807,13 @@ input[type="checkbox"]:checked~.check:after {
     .nav-item a,
     .drop-item a,
     .show {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         align-content: center;
 
     }
 
-    ul li {
-        margin-left: auto;
-    }
-
-    ul {
-        font-size: 2.3rem;
-
-    }
-
-    h1 {
-        font-size: 2.2rem;
-        left: 20px;
-        top: 30%;
-
+    .navbar ul {
+        height: 100px;
     }
 
     h3 {
@@ -925,21 +834,21 @@ input[type="checkbox"]:checked~.check:after {
         left: 40px;
     }
 
-    #philippe {
-        text-align: left;
-        font-size: 1.4rem;
+    .texte {
+        font-size: 1rem;
     }
 
-    .feuilles {
-        margin-top: 40%;
+    .texte h2 {
+        font-size: 1rem;
     }
 
-    .feuille h1 {
-        font-size: 4rem;
+    #geek {
+        right: 30px;
     }
 
-    #phil {
-        font-size: 2rem;
+    #fin {
+        top: 350px;
+        font-size: 1rem;
     }
 }
 
@@ -972,6 +881,7 @@ input[type="checkbox"]:checked~.check:after {
             left: 90%;
 
         }
+
     }
 
     #soleil {
@@ -980,23 +890,19 @@ input[type="checkbox"]:checked~.check:after {
 
     .nav-item a {
 
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
-    .navbar ul {
-        width: 80%;
-        margin-left: 100px;
-    }
 
-    /* #pp {
-        background:   white, #1D87F2;
+    #pp {
+        background: white, #1D87F2;
         height: 75%;
         position: absolute;
         right: 10%;
         left: 10%;
         top: 12%;
     }
- */
+
     body {
         position: relative;
         height: 100%;
@@ -1004,31 +910,28 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     #flipBook {
-        width: 55% !important;
+        width: 90% !important;
         top: 90px;
-        left: 500px;
+        left: 510px;
+    }
+
+    .texte {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+
+    .texte h2 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 
     .feuilles {
         width: 100% !important;
         margin-top: 35px;
     }
-
-    #philippe {
-        font-size: 1.2rem;
-        left: 40px;
-    }
-
-    .feuille h1 {
-        font-size: 5rem;
-        left: 40px;
-    }
-
-    #phil {
-        top: 100px;
-        font-size: 3rem;
-    }
-
 
     #logo2 {
         height: 400px;
@@ -1038,10 +941,8 @@ input[type="checkbox"]:checked~.check:after {
 
     }
 
-    h1 {
-        top: 25%;
-        font-size: 1.8rem;
-        left: 20px;
+    #lo {
+        height: 800px;
     }
 
     h2,
@@ -1052,7 +953,15 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     label {
-        top: 550px;
+        position: absolute;
+        top: 0;
+        left: 950px;
+    }
+    #geek{
+       right: 40px; 
+    }
+    #fin{
+        top: 500px;
     }
 
     #logo1:hover {
@@ -1093,9 +1002,12 @@ input[type="checkbox"]:checked~.check:after {
         top: 0
     }
 
-    ul {
-        font-size: 3rem;
+    .nav-item a {
+
+        font-size: 1.7rem;
     }
+
+
 }
 
 
@@ -1140,16 +1052,13 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     #flipBook {
-        width: 40% !important;
-        top: 150px;
-        left: 650px;
+        width: 47% !important;
+        top: 90px;
+        left: 700px;
     }
 
-    h1 {
-        font-size: 1.8rem;
-        left: 20px;
-        top: 100px;
-
+    .texte {
+        font-size: 1rem;
     }
 
     h2 {
@@ -1160,32 +1069,23 @@ input[type="checkbox"]:checked~.check:after {
         font-size: 4.5rem;
     }
 
-    ul {
-        font-size: 3rem;
-    }
-
-    #philippe {
-        top: 40px;
-        font-size: 1.4rem;
-    }
-
     .feuilles {
 
         width: 200% !important;
     }
 
-    .feuille h1 {
-        left: 22%;
-    }
-
-    #phil {
-        top: 50px;
-        right: 19%;
-        font-size: 2rem;
-    }
-
     label {
         top: 460px;
+    }
+
+    .navbar ul {
+        width: 90%;
+        height: 100px;
+        top: -40px;
+    }
+
+    .nav-item a {
+        font-size: 2.4rem;
     }
 }
 
@@ -1233,12 +1133,31 @@ input[type="checkbox"]:checked~.check:after {
         left: 950px;
     }
 
+    .texte {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+
+    .texte h2 {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+
+    #geek {
+        right: 45px;
+    }
+
     h2,
     h3 {
         font-size: 5rem;
-        left: 150px;
+        /* left: 150px; */
         top: 70px;
-        margin-left: 100px;
+        margin-left: 250px;
+
     }
 
     #logo2 {
@@ -1248,24 +1167,14 @@ input[type="checkbox"]:checked~.check:after {
         top: 200px;
     }
 
-    #philippe {
-        font-size: 2.4rem;
-
-    }
-
-    h1 {
-        font-size: 3.5rem;
-        left: 8%;
-        top: 150px;
-    }
 
     .navbar ul {
-        width: 80%;
+        width: 90%;
         height: 100px;
     }
 
     .nav-item a {
-        font-size: 3rem;
+        font-size: 2.6rem;
         padding-left: 40px;
     }
 }
