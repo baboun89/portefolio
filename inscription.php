@@ -1,17 +1,17 @@
 <?php
 // On traite le formulaire
 // On vérifie si $_POST n'est pas vide
-if (!empty($_POST)) {
+if(!empty($_POST)){
     // Ici $_POST n'est pas vide
     // On vérifie que tous les champs "obligatoires" sont remplis
-    if (
+    if(
         isset($_POST['pseudo'], $_POST['prenom'], $_POST['nom'], $_POST['email'], $_POST['pass'])
         && !empty($_POST['pseudo'])
         && !empty($_POST['prenom'])
         && !empty($_POST['nom'])
         && !empty($_POST['email'])
         && !empty($_POST['pass'])
-    ) {
+    ){
         // Tous les champs existent et ne sont pas vides
         // On vérifie si les critères de remplissage sont respectés
         // Pseudo > 5 caractères
@@ -24,18 +24,18 @@ if (!empty($_POST)) {
         $nom = htmlspecialchars($_POST['nom']);
 
         // On vérifie la longueur du pseudo
-        if (strlen($pseudo) < 5) {
+        if(strlen($pseudo) < 5){
             die('Le pseudo est trop court');
         }
 
         // Ici le pseudo est correct
         // On vérifie si l'email est un email
-        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
             die('Email invalide');
         }
 
         // On vérifie la longueur du mot de passe
-        if (strlen($_POST['pass']) < 12) {
+        if(strlen($_POST['pass']) < 12){
             die('Le mot de passe est trop court');
         }
 
@@ -63,7 +63,7 @@ if (!empty($_POST)) {
         // On redirige vers la page d"acceuil
         header('location: index.php');
         exit;
-    } else {
+    }else{
         // Au moins 1 champ est inexistant ou vide
         die('Il faut tout remplir');
     }
@@ -71,8 +71,7 @@ if (!empty($_POST)) {
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
