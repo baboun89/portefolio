@@ -44,7 +44,7 @@ input[type=submit]:hover {
     box-sizing: border-box;
     border-radius: 5px;
     /* background-color:#f2f2f2; */
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     /* redéfinition 400 + 2*20 */
     max-width: 440px;
@@ -75,46 +75,23 @@ input[type=submit]:hover {
 }
 
 
-h1 {
-    position: absolute;
-    top: 100px;
-    left: 30px;
-    font-size: 0.8rem;
-    margin: 0;
-}
 .form h1{
+    width: 200px;
     position: absolute ;
-    top: 0 ;
+    left: -20px;
+    top: 80px ;
+    font-size: 0.8rem;
 }
-#phil {
-    width: 90%;
-    position: absolute;
-    font-size: 0.7rem;
-    left: 10px;
-    top: 20%;
+.insc h1{
+    width: 100px;
+    position: absolute ;
+    left: 30px;
+    top: 80px ;
+    font-size: 0.8rem;
 }
-
-.fin {
-    left: 50%;
-    top: 70%;
+#pass{
+    transform: translateX(-5px);
 }
-
-.point {
-    text-decoration: none;
-    color: black;
-}
-
-#geek {
-    position: absolute;
-    right: 14px;
-    top: 20%;
-}
-.form{
-    position: absolute;
-    top: -105px;
-    
-}
-
 @media screen and (orientation: landscape) {
     #feuilles {
         width: 85%;
