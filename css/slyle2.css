@@ -70,33 +70,47 @@ input[type=submit]:hover {
 }
 
 .feuille {
+    width: 50%;
+    height: 200px;
     position: relative;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-h1 {
+.texte {
+    font-size: 0.5rem;
     position: absolute;
-    top: 100px;
-    left: 30px;
-    font-size: 0.8rem;
+    width: 80%;
+}
+
+.texte {
+    font-size: 0.6rem;
+}
+.texte h1 {
     margin: 0;
 }
-.form h1{
-    position: absolute ;
-    top: 0 ;
+.texte h2 {
+    margin: 0;
 }
-#phil {
-    width: 90%;
-    position: absolute;
-    font-size: 0.7rem;
-    left: 10px;
-    top: 20%;
+.texte h3 {
+    margin: 0;
 }
 
+.texte p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
 .fin {
-    left: 50%;
-    top: 70%;
+    transform: translateY(50px);
 }
 
 .point {
@@ -109,31 +123,28 @@ h1 {
     right: 14px;
     top: 20%;
 }
-.form{
-    position: absolute;
-    top: -105px;
-    
-}
+
 
 @media screen and (orientation: landscape) {
     #feuilles {
         width: 85%;
         margin: auto;
     }
-    .container{
+
+    .container {
         top: 110px;
     }
+
     h1 {
-        top: 60px;
         font-size: 1.5rem;
-        left: 40px;
     }
 
-    #phil {
-        top: 70px;
-        width: 80%;
-        font-size: 0.9rem;
-        left: 30px;
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .texte p {
+        font-size: 1.1rem;
     }
 
     #logo1 {
@@ -149,39 +160,26 @@ h1 {
 }
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
-    h1 {
-        left: 10px;
-        font-size: 1.4rem;
+    .texte h1 {
+        font-size: 1.2rem;
     }
 
     h2 {
         font-size: 1rem;
     }
 
-    #phil {
-        width: 80%;
-        font-size: 0.8rem;
-        left: 20px;
-        top: 40px;
-    }
 
 }
 
 @media screen and (min-width: 569px) and (orientation: landscape) {
     h1 {
         left: 20px;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
-
-    #phil {
-        font-size: 1.3rem;
-        top: 60px;
-    }
-
 
     #geek {
         right: 22px;
@@ -214,10 +212,6 @@ h1 {
         left: 40px;
     }
 
-    #phil {
-        font-size: 2rem;
-        width: 90%;
-    }
 
     #geek {
         right: 30px;
@@ -237,15 +231,16 @@ h1 {
     }
 
     h1 {
-        margin-left: 30px;
+        /* margin-top: 100px;
+        margin-left: 30px; */
         font-size: 3.5rem;
 
     }
 
-    #phil {
-        top: 100px;
-        font-size: 2.5rem;
+    h2 {
+        font-size: 2.8rem;
     }
+
 
     #logo1 {
         top: 100px;
@@ -255,8 +250,6 @@ h1 {
 
 @media screen and (min-width: 1300px) {
     #feuilles {
-        padding: auto;
-        margin-top: -1.5%;
         width: 70%;
 
     }
@@ -264,16 +257,20 @@ h1 {
     h1 {
         font-size: 3rem;
         left: 20px;
-        margin-top: 100px;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .texte p {
+        font-size: 2rem;
     }
 
     #geek {
         right: 40px;
     }
 
-    #phil {
-        font-size: 1.2rem;
-    }
 
     #logo1 {
         width: 70px;
@@ -289,18 +286,19 @@ h1 {
     }
 
     h1 {
-        left: 90px;
-        ;
+        font-size: 4rem;
     }
 
-    #phil {
-        font-size: 1.7rem;
-        left: 50px;
+    h2 {
+        font-size: 3.5rem;
     }
 
+
+    .texte p {
+        font-size: 3rem;
+    }
 
     #geek {
         right: 50px;
     }
-
 }
