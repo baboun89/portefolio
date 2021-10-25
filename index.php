@@ -149,8 +149,10 @@
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
+                <div class="texte">
+                  <h1>PROJETS</h1>
+              </div>  
             </div>
-
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%"></a>
             </div>

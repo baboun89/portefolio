@@ -72,18 +72,18 @@ if (!empty($_POST)) {
 <body>
     <audio src="audio/Master KG - Jerusalema  Feat Nomcebo Official Music Video.mp3" autoplay="true" loop="true"></audio>
 
-    <a id="logo" href="index.php">
-        <img id="logo1" class="rotating" src="images/logoxcf.png" alt="logo1" width="100" height="100"></a>
     <div id="feuilles">
         <div class="feuille">
             <img src="images/feuille.jpg" alt="livre" width="100%">
             <div class="form">
+                <a id="logo" href="index.php">
+                    <img id="logo1" class="rotating" src="images/logoxcf.png" alt="logo1" width="100" height="100"></a>
                 <h1>Formulaire de contact</h1>
             </div>
         </div>
         <div class="feuille">
-            <img src="images/feuille.jpg" alt="livre" width="100%">
             <!-- formulaire de contact -->
+            <img src="images/feuille.jpg" alt="livre" width="100%">
             <div class="container">
                 <form method="POST">
                     <label for="fname">Nom</label>

@@ -85,13 +85,13 @@ if (!empty($_POST)) {
 <body>
     <audio src="audio/Master KG - Jerusalema  Feat Nomcebo Official Music Video.mp3" autoplay="true" loop="true"></audio>
 
-    <a id="logo" href="index.php">
-        <img id="logo1" class="rotating" src="images/logoxcf.png" alt="logo1" width="100" height="100"></a>
     <div id="feuilles">
         <div class="feuille">
             <img src="images/feuille.jpg" alt="livre" width="100%">
             <div class="container">
-                <div class="insc">
+                <div class="form">
+                    <a id="logo" href="index.php">
+                        <img id="logo1" class="rotating" src="images/logoxcf.png" alt="logo1" width="100" height="100"></a>
                     <h1>Inscription</h1>
                 </div>
             </div>
@@ -121,7 +121,7 @@ if (!empty($_POST)) {
                         <label for="pass">Mot de passe</label>
                         <input type="password" name="pass" id="pass">
                     </div>
-                    <button type="submit">M'inscrire</button>
+                    <button type="submit">Je m'inscris</button>
                 </form>
 
             </div>
