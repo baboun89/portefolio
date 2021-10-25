@@ -82,8 +82,8 @@
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
                     <h1>FORMATIONS</h1>
-                    <h2>Formation online formapro</h2>
-                    <h2>Titre Professionnel Designer Web</h2>
+                    <p>Formation online formapro</p>
+                    <p>Titre Professionnel Designer Web</p>
                     <P>Elaboration du design graphique d'un outil de communation nuérique: 161 h</P>
                     <p>Réalisation d'un outil de commucation numérique: 518 h</p>
                     <p>contribution à la gestion et au suivi d'un projet de communication numérique: 28 h</p>
