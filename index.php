@@ -72,7 +72,7 @@
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
-                    <h1>BABOUHOT Philippe</h1>
+                    <h2>BABOUHOT Philippe</h2>
                     <p> Bonjour , je m'appelle Philippe BABOUHOT, J'ai 44ans, je suis célibataire et j'ai 3 enfants.
                         J'habite a
                         JOIGNY dans l'Yonne, mon projet est de devenir designer web.</p>

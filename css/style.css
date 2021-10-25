@@ -265,7 +265,7 @@ img {
 .texte {
     font-size: 0.5rem;
     position: absolute;
-    top: -15px;
+    top: 25%;
     width: 80%;
     text-align: center;
     margin: 15px;
@@ -274,7 +274,7 @@ img {
 .texte h2 {
     font-size: 0.5rem;
     color: black;
-    top: 0;
+    /* top: 0; */
 
 }
 
@@ -550,8 +550,7 @@ input[type="checkbox"]:checked~.check:after {
 
 
     h1 {
-        left: 10px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     h2 {
@@ -567,7 +566,7 @@ input[type="checkbox"]:checked~.check:after {
     h2,
     h3 {
         display: inline;
-        margin-left: 30px;
+        margin-left: 40px;
         z-index: 30;
 
     }
@@ -656,11 +655,15 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     .check {
-        top: 630px;
+        top: 82%;
     }
 
     #fin {
         top: 170px;
+    }
+
+    .texte {
+        font-size: 0.8rem;
     }
 }
 
@@ -700,7 +703,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     h3 {
-
+        margin-left: 80px;
         font-size: 2rem;
     }
 
@@ -710,6 +713,10 @@ input[type="checkbox"]:checked~.check:after {
 
     .nav-item a {
         font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1rem;
     }
 }
 
@@ -835,7 +842,9 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     .texte {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        width: 100%;
+        margin: 0;
     }
 
     .texte h2 {
@@ -912,7 +921,12 @@ input[type="checkbox"]:checked~.check:after {
     #flipBook {
         width: 90% !important;
         top: 90px;
-        left: 510px;
+        left: 550px;
+    }
+
+    .check {
+        top: 770px;
+        right: -57px;
     }
 
     .texte {
@@ -955,12 +969,14 @@ input[type="checkbox"]:checked~.check:after {
     label {
         position: absolute;
         top: 0;
-        left: 950px;
+        left: 1020px;
     }
-    #geek{
-       right: 40px; 
+
+    #geek {
+        right: 40px;
     }
-    #fin{
+
+    #fin {
         top: 500px;
     }
 
@@ -1074,9 +1090,10 @@ input[type="checkbox"]:checked~.check:after {
         width: 200% !important;
     }
 
-    label {
-        top: 460px;
-    }
+    /* label {
+        top: 300px;
+        right: 10px;
+    } */
 
     .navbar ul {
         width: 90%;
@@ -1086,6 +1103,11 @@ input[type="checkbox"]:checked~.check:after {
 
     .nav-item a {
         font-size: 2rem;
+    }
+
+    .check {
+        top: 600px;
+        right: -300px;
     }
 }
 
@@ -1124,7 +1146,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     label {
-        top: 690px;
+        top: 500px;
     }
 
     #flipBook {
@@ -1132,6 +1154,7 @@ input[type="checkbox"]:checked~.check:after {
         top: 150px;
         left: 950px;
     }
+
 
     .texte {
         font-size: 1.5rem;
@@ -1176,6 +1199,11 @@ input[type="checkbox"]:checked~.check:after {
     .nav-item a {
         font-size: 2.5rem;
         padding-left: 40px;
+    }
+
+    .check {
+        top: 400px;
+        right: -800px;
     }
 }
 
