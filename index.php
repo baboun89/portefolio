@@ -166,7 +166,7 @@
                     <article>
                     <h1>PROJET  {$projet['title']}</h1>
                     <div>
-                    <img class='image' src='uploads/projets/{$projet['img']}' alt='image' width='100%'>
+                    <img class='image' src='uploads/projets/{$projet['img']}' alt='image' width='80%'>
                     </div>
                     </article>
                     </div>

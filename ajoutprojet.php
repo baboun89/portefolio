@@ -89,7 +89,7 @@ if (!empty($_POST)) {
 
 
         // On redirige vers la page d'accueil
-        header('Location: projets.php');
+        header('Location: index.php');
         exit;
     } else {
         // Au moins 1 champ est inexistant ou vide
