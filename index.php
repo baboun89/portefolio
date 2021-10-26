@@ -122,7 +122,7 @@
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
 
                 <div class="texte">
-                  
+
                     <P>HTML</P>
                     <p>CSS</p>
                     <p>bootstrap</p>
@@ -134,25 +134,58 @@
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
-              <div class="texte">
-                  <h1>EXPERIENCE</h1>
-              </div>  
-            </div>
-            <div class="c-flipbook__page">
-                <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
-            </div>
-            <div class="c-flipbook__page">
-                <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
-              <div class="texte">
-                  <h1>PROJETS</h1>
-              </div>  
-            </div>
-            <div class="c-flipbook__page">
-                <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
-                  <h1>PROJETS</h1>
-              </div>  
+                    <h1>EXPERIENCE</h1>
+                </div>
             </div>
+            <div class="c-flipbook__page">
+                <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
+            </div>
+            <?php
+            // require 'includes/msg_session_users.php';
+
+            // On se connecte à la base
+            require_once 'includes/connect.php';
+
+            // On écrit la requête
+            // On ne met JAMAIS une donnée extérieure ($id) directement dans la requête
+            $sql = "SELECT * FROM `projets` ";
+
+            // Une requête contenant des paramètres SQL doit être "préparée"
+
+            $requete = $db->query($sql);
+
+
+            $projets = $requete->fetchAll();
+            foreach ($projets as $projet) {
+
+
+
+                echo "
+                <div class='c-flipbook__page'>
+                    <img class='feuille' src='images/feuille.jpg' alt='livre' width='100%'>
+                    <div class='texte'>
+                    <article>
+                    <h1>PROJET  {$projet['title']}</h1>
+                    <div>
+                    <img class='image' src='uploads/projets/{$projet['img']}' alt='image' width='100%'>
+                    </div>
+                    </article>
+                    </div>
+                    </div>
+                    <div class='c-flipbook__page'>
+                    <img class='feuille' src='images/feuille.jpg' alt='livre' width='100%'>
+                    <div class='texte'>
+                    <h1>{$projet['title']}</h1>
+                    <p>{$projet['content']}</p>
+                        <p>{$projet['link']}</p>
+                        <p>créer le :{$projet['created']}</p>
+                        <p>mis à jour le :{$projet['updated']}</p>
+                    </div>
+                 </div>";
+            }
+
+            ?>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%"></a>
             </div>
@@ -162,7 +195,7 @@
                     <h1>FIN...</h1>
                 </div>
                 <img id="geek" src="images/geek.gif" alt="livre" width="85%">
-                
+
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/fbook.jpg" alt="livre" width="100%">
@@ -174,14 +207,14 @@
         <input type="checkbox" id="case" checked="">
         <span class="check"></span>
     </label>
-</section>
-<div id="projectContainer">
-    <div id="starSuperContainer">
-        <div id="starContainer"></div>
-        <div id="starFade"></div>
+    </section>
+    <div id="projectContainer">
+        <div id="starSuperContainer">
+            <div id="starContainer"></div>
+            <div id="starFade"></div>
+        </div>
+        <div id="fireworksContainer"></div>
     </div>
-    <div id="fireworksContainer"></div>
-</div>
 
     </div>
 </body>

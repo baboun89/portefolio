@@ -11,7 +11,21 @@ const DBUSER = 'root';
 const DBPASS = '';
 
 //DBNAME = nom de la base de données
-const DBNAME = 'portefolio';
+const DBNAME = 'portfolio';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // NE RIEN MODIFIER SI-DESSOUS !!!!!!!!!
 // on définit le DSN (Data Source Name) mysql
