@@ -52,9 +52,9 @@
         <img id="soleil" src="images/soleil.png" alt="soleil" width=200>
     </div>
 
-    <section>
+    <section class="title">
         <h2>Philippe Babouhot</h2>
-        <h3>designer web</h3>
+        <h2>designer web</h2>
     </section>
     <section id="lo">
         <div class="c-flipbook" id="flipBook">
@@ -63,11 +63,9 @@
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
-                <div class="texte">
-
+                <div class="texte1">
                     <h1>PRESENTATION</h1>
                 </div>
-
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
@@ -82,8 +80,8 @@
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
                     <h1>FORMATIONS</h1>
-                    <p>Formation online formapro</p>
-                    <p>Titre Professionnel Designer Web</p>
+                    <h2>Formation online formapro</h2>
+                    <h2>Titre Professionnel Designer Web</h2>
                     <P>Elaboration du design graphique d'un outil de communation nuérique: 161 h</P>
                     <p>Réalisation d'un outil de commucation numérique: 518 h</p>
                     <p>contribution à la gestion et au suivi d'un projet de communication numérique: 28 h</p>

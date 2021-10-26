@@ -262,20 +262,38 @@ img {
 
 }
 
-.texte {
-    font-size: 0.5rem;
+.texte1 {
+    font-size: 0.7rem;
     position: absolute;
-    top: -10px;
-    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titre h2 {
+    margin-left: 40px;
+}
+
+.texte {
+    font-size: 0.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98%;
     text-align: center;
-    margin: 15px;
+}
+
+.texte h1 {
+    margin: 10px;
+
 }
 
 .texte h2 {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: black;
     /* top: 0; */
-margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 #formulaire {
@@ -291,6 +309,9 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
 
+}
+p {
+    margin: 0;
 }
 
 h2,
@@ -533,7 +554,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     .nav-menu {
-        margin-top: 40px;
+        margin-top: 25px;
 
 
 
@@ -547,7 +568,13 @@ input[type="checkbox"]:checked~.check:after {
     #projectContainer {
         z-index: 23;
     }
+    .title{
+        transform: translateY(20px);
+    }
 
+    .title h2 {
+        margin: 20px;
+    }
 
     h1 {
         font-size: 0.8rem;
@@ -555,18 +582,18 @@ input[type="checkbox"]:checked~.check:after {
 
     h2 {
         font-size: 2rem;
-        top: 40px;
+        /* top: 40px; */
     }
 
     h3 {
         font-size: 1.8rem;
-        top: 40px;
+        /* top: 40px; */
     }
 
     h2,
     h3 {
         display: inline;
-        margin-left: 40px;
+        /* margin-left: 40px; */
         z-index: 30;
 
     }
@@ -578,10 +605,10 @@ input[type="checkbox"]:checked~.check:after {
 
     #flipBook {
 
-        width: 48% !important;
+        width: 55% !important;
         left: 50%;
         transform: translateX(-50%);
-        top: 95px;
+        top: 70px;
 
     }
 
@@ -636,7 +663,9 @@ input[type="checkbox"]:checked~.check:after {
     #flipBook {
         top: 80px;
     }
+.texte h2{
 
+}
     label {
         bottom: 100px;
     }
@@ -659,11 +688,11 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     #fin {
-        top: 170px;
+        top: 200px;
     }
 
     .texte {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
 
@@ -832,7 +861,6 @@ input[type="checkbox"]:checked~.check:after {
     h2,
     h3 {
         font-size: 5rem;
-        top: 20px;
     }
 
     #flipBook {
@@ -840,7 +868,9 @@ input[type="checkbox"]:checked~.check:after {
         top: 55px;
         left: 40px;
     }
-
+    .texte1 {
+        font-size: 1.5rem;
+    }
     .texte {
         font-size: 1.5rem;
         width: 100%;
@@ -848,7 +878,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     .texte h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #geek {
@@ -931,7 +961,7 @@ input[type="checkbox"]:checked~.check:after {
 
     .texte {
         font-size: 1.5rem;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
 
     .texte h2 {
@@ -962,7 +992,7 @@ input[type="checkbox"]:checked~.check:after {
     h2,
     h3 {
 
-        right: 20px;
+        /* right: 20px; */
         font-size: 3.6rem;
     }
 
@@ -1158,16 +1188,16 @@ input[type="checkbox"]:checked~.check:after {
 
     .texte {
         font-size: 1.5rem;
-        margin-left: 50px;
     }
 
     .texte h2 {
-        font-size: 1.2rem;
-    }
-
-    h1 {
         font-size: 2rem;
-        margin-left: 50px;
+    }
+    .title h2 {
+        margin: 100px;
+    }
+    h1 {
+        font-size: 3rem;
     }
 
     #geek {
@@ -1177,10 +1207,6 @@ input[type="checkbox"]:checked~.check:after {
     h2,
     h3 {
         font-size: 5rem;
-        /* left: 150px; */
-        top: 70px;
-        margin-left: 250px;
-
     }
 
     #logo2 {
