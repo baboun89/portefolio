@@ -176,9 +176,7 @@
                     <div class='texte'>
                     <h1>{$projet['title']}</h1>
                     <p>{$projet['content']}</p>
-                    <a href='{$projet['link']}'>{$projet['link']}</a>
-
-                         <p>{$projet['link']}</p>
+                    <a class='lien' href='{$projet['link']}'>{$projet['link']}</a>
                         <p>créer le :{$projet['created']}</p>
                         <p>mis à jour le :{$projet['updated']}</p>
                     </div>

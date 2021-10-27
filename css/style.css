@@ -218,7 +218,7 @@ ul li {
 
 a {
     text-decoration: none;
-
+color: red;
 }
 
 img {
@@ -256,6 +256,9 @@ img {
     opacity: 90%;
 
 }
+a:hover {
+    color: maroon;
+}
 .texte ul{
     padding-left: 0;
 }
@@ -270,7 +273,9 @@ img {
 .titre h2 {
     margin-left: 40px;
 }
-
+.c-flipbook__page::before{
+    position: static;
+}
 .texte {
     font-size: 0.6rem;
     position: absolute;

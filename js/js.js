@@ -9,6 +9,7 @@ window.onload = () => {
 }}
 new FlipBook('flipBook', {
     canClose: true,
+    
 })
 let check = document.querySelector("#case");
 let soleil = document.querySelector(".soleil");
@@ -217,3 +218,9 @@ const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
 });
+let lien = document.querySelector(".lien");
+console.log(lien);
+lien.addEventListener("click", function(e){
+    e.stopPropagation();
+
+})
