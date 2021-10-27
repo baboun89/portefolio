@@ -97,7 +97,7 @@
                     <p>Savoir-être: 7 h</p>
                     <p>Entrepreunariat: 14 h</p>
                     <p>TRE et communication: 14 h</p>
-                    <h5>Formation professionnellle: 798 h</h5>
+                    <h2>Formation professionnellle: 798 h</h2>
                     <p>Formation en situation de travail en entreprise: 280 h</p>
                     <p>Validation de la formation: 21 h</p>
                     <h2>Durée totale du plan de formation: 1099 h</h2>
@@ -176,7 +176,9 @@
                     <div class='texte'>
                     <h1>{$projet['title']}</h1>
                     <p>{$projet['content']}</p>
-                        <p>{$projet['link']}</p>
+                    <a href='{$projet['link']}'>{$projet['link']}</a>
+
+                         <p>{$projet['link']}</p>
                         <p>créer le :{$projet['created']}</p>
                         <p>mis à jour le :{$projet['updated']}</p>
                     </div>

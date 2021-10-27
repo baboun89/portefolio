@@ -213,9 +213,7 @@ input[type=submit]:hover {
 
 ul li {
     text-align: center;
-    margin-left: 7px;
     list-style: none;
-
 }
 
 a {
@@ -235,9 +233,7 @@ img {
 }
 
 #logo1 {
-
     display: block;
-
     animation-direction: alternate;
     animation-duration: 5s;
 }
@@ -260,7 +256,9 @@ img {
     opacity: 90%;
 
 }
-
+.texte ul{
+    padding-left: 0;
+}
 .texte1 {
     font-size: 0.7rem;
     position: absolute;
@@ -280,25 +278,25 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 98%;
+    height: 100%;
     text-align: center;
+    margin-top: 20px;
 }
 
 .texte h1 {
     margin: 10px;
-
+    margin-top: 0;
 }
 
 .texte h2 {
     font-size: 0.7rem;
     color: black;
-    /* top: 0; */
-    /* margin-top: 50px; */
+    margin: 0;
 }
 
 #formulaire {
     position: absolute;
     bottom: -50px;
-    /* margin-left: 30px; */
     color: red;
 
 }
@@ -309,6 +307,7 @@ h3 {
     margin-bottom: 0;
 
 }
+
 p {
     margin: 0;
 }
@@ -555,8 +554,6 @@ input[type="checkbox"]:checked~.check:after {
     .nav-menu {
         margin-top: 25px;
 
-
-
     }
 
 
@@ -567,7 +564,8 @@ input[type="checkbox"]:checked~.check:after {
     #projectContainer {
         z-index: 23;
     }
-    .title{
+
+    .title {
         transform: translateY(20px);
     }
 
@@ -662,6 +660,7 @@ input[type="checkbox"]:checked~.check:after {
     #flipBook {
         top: 80px;
     }
+
     label {
         bottom: 100px;
     }
@@ -679,8 +678,7 @@ input[type="checkbox"]:checked~.check:after {
 
     }
 
-    .check {
-    }
+    .check {}
 
     #fin {
         top: 200px;
@@ -863,9 +861,11 @@ input[type="checkbox"]:checked~.check:after {
         top: 55px;
         left: 40px;
     }
+
     .texte1 {
         font-size: 1.5rem;
     }
+
     .texte {
         font-size: 1.5rem;
         width: 100%;
@@ -921,10 +921,12 @@ input[type="checkbox"]:checked~.check:after {
     #soleil {
         width: 300px;
     }
+
     .navbar ul {
         width: 85%;
         height: 80px;
     }
+
     .nav-item a {
 
         font-size: 1.3rem;
@@ -1083,9 +1085,11 @@ input[type="checkbox"]:checked~.check:after {
 
         }
     }
+
     [id^=btn]:checked+ul {
         display: flex;
     }
+
     #logo2 {
         height: 400px;
         width: 400px;
@@ -1181,7 +1185,7 @@ input[type="checkbox"]:checked~.check:after {
 
     #flipBook {
         width: 55% !important;
-        top: 150px;
+        top: 140px;
         left: 950px;
     }
 
@@ -1193,9 +1197,11 @@ input[type="checkbox"]:checked~.check:after {
     .texte h2 {
         font-size: 2rem;
     }
+
     .title h2 {
         margin: 100px;
     }
+
     h1 {
         font-size: 3rem;
     }
