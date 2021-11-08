@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="css/flipbook.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="./images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="js/flipbook.min.js" defer></script>
     <script src="js/js.js" defer></script>
+
 </head>
 
 <body>
@@ -82,20 +86,24 @@
                     <h1>FORMATIONS</h1>
                     <h2>Formation online formapro</h2>
                     <h2>Titre Professionnel Designer Web</h2>
-                    <P>Elaboration du design graphique d'un outil de communation nuérique: 161 h</P>
+                    <P>Elaboration du design graphique d'un outil de communication numérique: 161 h</P>
                     <p>Réalisation d'un outil de commucation numérique: 518 h</p>
-                    <p>contribution à la gestion et au suivi d'un projet de communication numérique: 28 h</p>
-                    <p>Intégration et acceuil: 28 h</p>
                 </div>
-
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
+                    <p>contribution à la gestion et au suivi d'un projet de communication numérique: 28 h</p>
+                    <p>Intégration et acceuil: 28 h</p>
                     <p>Anglas professionnel: 35 h</p>
                     <p>Eco-citoyenneté: 7 h</p>
                     <p>Savoir-être: 7 h</p>
                     <p>Entrepreunariat: 14 h</p>
+                </div>
+            </div>
+            <div class="c-flipbook__page">
+                <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
+                <div class="texte">
                     <p>TRE et communication: 14 h</p>
                     <h2>Formation professionnellle: 798 h</h2>
                     <p>Formation en situation de travail en entreprise: 280 h</p>
@@ -104,8 +112,14 @@
                 </div>
             </div>
             <div class="c-flipbook__page">
-                <img class="feuille" src="images/feuille.jpg" alt="livre" width=" 100%">
+                <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
+                </div>
+            </div>
+
+            <div class="c-flipbook__page">
+                <img class="feuille" src="images/feuille.jpg" alt="livre" width=" 100%">
+                <div class="texte1">
                     <h1>COMPETENCES</h1>
                     <h1>designe</h1>
                     <ul>
@@ -119,7 +133,7 @@
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
 
-                <div class="texte">
+                <div class="texte1">
 
                     <P>HTML</P>
                     <p>CSS</p>
@@ -132,7 +146,7 @@
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
-                <div class="texte">
+                <div class="texte1">
                     <h1>EXPERIENCE</h1>
                 </div>
             </div>
@@ -190,16 +204,18 @@
             <div class="c-flipbook__page">
                 <img id="point3" class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte" id="fin">
+                    <img id="geek" src="images/geek.gif" alt="livre" width="85%">
                     <h1>FIN...</h1>
                 </div>
-                <img id="geek" src="images/geek.gif" alt="livre" width="85%">
 
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/fbook.jpg" alt="livre" width="100%">
             </div>
         </div>
-        <img id="logo2" class="rotating" src="images/logosvg.png" alt="logo2">
+        <div id="logo2">
+            <img  class="rotating" src="images/logosvg.png" alt="logo2">
+        </div>
     </section>
     <label>
         <input type="checkbox" id="case" checked="">
