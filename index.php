@@ -11,8 +11,7 @@
     <link rel="shortcut icon" type="image/png" href="./images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="js/flipbook.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">    <script src="js/flipbook.min.js" defer></script>
     <script src="js/js.js" defer></script>
 
 </head>

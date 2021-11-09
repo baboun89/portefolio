@@ -68,7 +68,7 @@ button[type=submit]:hover {
     align-items: center;
     /* z-index: 6; */
     margin-top: 50%;
-    transform: translateY(50%);
+    /* transform: translateY(50%); */
 }
 
 .feuille {
