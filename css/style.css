@@ -507,18 +507,71 @@ input[type="checkbox"]:checked~.check:after {
     transform: translate(-50%, -50%);
 }
 
-/* @media screen and (min-width: 400px) {
-    .texte{
+@media screen and (min-width: 374px) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 82%;
+            left: 50%;
+
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
+    .texte {
         font-size: 0.7rem;
     }
-    .texte1 h1{
+
+    .texte1 h1 {
         font-size: 1rem;
     }
-    .texte h2{
+
+    .texte h2 {
         font-size: 0.8rem;
     }
-} */
+   .soleil{
+       transform: translateX(-50%);
+   } 
+}
+
 @media screen and (min-width: 500px) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: -30%;
+        }
+
+        25% {
+            bottom: 60%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 36%;
+        }
+
+        75% {
+            bottom: 70%;
+            left: 70%;
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
     .texte {
         font-size: 1rem;
     }
@@ -534,6 +587,25 @@ input[type="checkbox"]:checked~.check:after {
 
 
 @media screen and (min-width: 767px) {
+    @keyframes animSun {
+        0% {
+            bottom: 0%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 90%;
+            left: 50%;
+
+        }
+
+        100% {
+            bottom: 0%;
+            left: 100%;
+
+        }
+    }
+
     .title {
         font-size: 2rem;
         color: white;
@@ -575,6 +647,34 @@ input[type="checkbox"]:checked~.check:after {
 }
 
 @media screen and (min-width: 1300px) {
+    @keyframes animSun {
+        0% {
+            bottom: 0%;
+            left: 0%;
+        }
+
+        25% {
+            bottom: 50%;
+            left: 25%;
+        }
+
+        50% {
+            bottom: 90%;
+            left: 50%;
+        }
+
+        75% {
+            bottom: 50%;
+            left: 75%;
+        }
+
+        100% {
+            bottom: 0%;
+            left: 100%;
+
+        }
+    }
+
     h2 {
         margin-top: 0;
         margin-bottom: 0;
@@ -589,12 +689,41 @@ input[type="checkbox"]:checked~.check:after {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .texte {
         font-size: 1.1rem;
     }
 }
 
 @media screen and (min-width: 1900px) {
+    @keyframes animSun {
+        0% {
+            bottom: 0%;
+            left: 0%;
+        }
+
+        25% {
+            bottom: 50%;
+            left: 25%;
+        }
+
+        50% {
+            bottom: 90%;
+            left: 50%;
+        }
+
+        75% {
+            bottom: 50%;
+            left: 75%;
+        }
+
+        100% {
+            bottom: 0%;
+            left: 100%;
+
+        }
+    }
+
     #flipBook {
         width: 57% !important;
     }
@@ -602,22 +731,29 @@ input[type="checkbox"]:checked~.check:after {
     .texte1 h1 {
         font-size: 2.5rem;
     }
+
     .texte1 {
         font-size: 1.5rem;
     }
-    .texte h1{
+
+    .texte h1 {
         font-size: 2.5rem;
     }
 
     .texte h2 {
         font-size: 1.7rem;
     }
+
     .texte {
         font-size: 1.5rem;
     }
-ul li{
-    font-size: 1.5rem;
-}
+
+    ul li {
+        font-size: 1.5rem;
+    }
+    .check{
+        right: 200px;
+    }
 }
 
 
@@ -961,24 +1097,6 @@ ul li{
 }
 
 @media screen and (min-width: 374px) and (orientation: portrait) {
-    @keyframes animSun {
-        0% {
-            bottom: 10%;
-            left: -30%;
-        }
-
-        50% {
-            bottom: 82%;
-            left: 27%;
-
-        }
-
-        100% {
-            bottom: 10%;
-            left: 70%;
-
-        }
-    }
 
     #flipBook {
         top: 80px;
