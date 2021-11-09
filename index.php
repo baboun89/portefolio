@@ -74,7 +74,7 @@
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
                     <h2>BABOUHOT Philippe</h2>
-                    <p> Bonjour , je m'appelle Philippe BABOUHOT, J'ai 44ans, je suis célibataire et j'ai 3 enfants.
+                    <p> Bonjour , je m'appelle Philippe BABOUHOT, J'ai 44 ans, je suis célibataire et j'ai 3 enfants.
                         J'habite a
                         JOIGNY dans l'Yonne, mon projet est de devenir designer web.</p>
                 </div>
@@ -85,29 +85,29 @@
                     <h1>FORMATIONS</h1>
                     <h2>Formation online formapro</h2>
                     <h2>Titre Professionnel Designer Web</h2>
-                    <P>Elaboration du design graphique d'un outil de communication numérique: 161 h</P>
-                    <p>Réalisation d'un outil de commucation numérique: 518 h</p>
+                    <P>Elaboration du design graphique d'un outil de communication numérique: 161&nbsp;h</P>
+                    <p>Réalisation d'un outil de commucation numérique: 518&nbsp;h</p>
                 </div>
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
-                    <p>contribution à la gestion et au suivi d'un projet de communication numérique: 28 h</p>
-                    <p>Intégration et acceuil: 28 h</p>
-                    <p>Anglas professionnel: 35 h</p>
-                    <p>Eco-citoyenneté: 7 h</p>
-                    <p>Savoir-être: 7 h</p>
-                    <p>Entrepreunariat: 14 h</p>
+                    <p>contribution à la gestion et au suivi d'un projet de communication numérique: 28&nbsp;h</p>
+                    <p>Intégration et acceuil: 28&nbsp;h</p>
+                    <p>Anglas professionnel: 35&nbsp;h</p>
+                    <p>Eco-citoyenneté: 7&nbsp;h</p>
+                    <p>Savoir-être: 7&nbsp;h</p>
+                    <p>Entrepreunariat: 14&nbsp;h</p>
                 </div>
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
                 <div class="texte">
-                    <p>TRE et communication: 14 h</p>
-                    <h2>Formation professionnellle: 798 h</h2>
-                    <p>Formation en situation de travail en entreprise: 280 h</p>
-                    <p>Validation de la formation: 21 h</p>
-                    <h2>Durée totale du plan de formation: 1099 h</h2>
+                    <p>TRE et communication: 14&nbsp;h</p>
+                    <h2>Formation professionnellle: 798&nbsp;h</h2>
+                    <p>Formation en situation de travail en entreprise: 280&nbsp;h</p>
+                    <p>Validation de la formation: 21&nbsp;h</p>
+                    <h2>Durée totale du plan de formation: 1099&nbsp;h</h2>
                 </div>
             </div>
             <div class="c-flipbook__page">

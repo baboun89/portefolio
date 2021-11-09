@@ -589,6 +589,9 @@ input[type="checkbox"]:checked~.check:after {
         left: 50%;
         transform: translateX(-50%);
     }
+    .texte {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (min-width: 1900px) {
