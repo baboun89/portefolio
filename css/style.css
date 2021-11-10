@@ -538,9 +538,10 @@ input[type="checkbox"]:checked~.check:after {
     .texte h2 {
         font-size: 0.8rem;
     }
-   .soleil{
-       transform: translateX(-50%);
-   } 
+
+    .soleil {
+        transform: translateX(-50%);
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -644,6 +645,20 @@ input[type="checkbox"]:checked~.check:after {
         font-size: 1.5rem;
     }
 
+    @-webkit-keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    .rotating {
+        -webkit-animation: rotating 10s linear infinite;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -674,6 +689,15 @@ input[type="checkbox"]:checked~.check:after {
 
         }
     }
+
+    #logo1 {
+        margin-top: 10px;
+    }
+
+    .icon {
+        margin-top: 10px;
+    }
+
 
     h2 {
         margin-top: 0;
@@ -725,7 +749,7 @@ input[type="checkbox"]:checked~.check:after {
     }
 
     #flipBook {
-        width: 57% !important;
+        width: 53% !important;
     }
 
     .texte1 h1 {
@@ -751,7 +775,8 @@ input[type="checkbox"]:checked~.check:after {
     ul li {
         font-size: 1.5rem;
     }
-    .check{
+
+    .check {
         right: 200px;
     }
 }

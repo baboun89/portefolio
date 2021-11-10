@@ -22,6 +22,7 @@
         <nav class="navbar">
             <a id="logo" href="indexfin.html">
                 <img id="logo1" class="rotating" src="images/logoxcf.png" alt="logo1" width="50" height="50"></a>
+                <h2>Bonne chasse au trésor!!!</h2>
             <label for="btn" class="icon">
                 <div class="burger">
                     <span></span>
