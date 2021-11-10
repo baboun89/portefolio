@@ -619,6 +619,9 @@ input[type="checkbox"]:checked~.check:after {
     .texte {
         font-size: 1.1rem;
     }
+    ul li {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1900px) {

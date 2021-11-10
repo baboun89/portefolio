@@ -121,7 +121,7 @@
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width=" 100%">
                 <div class="texte1">
-                    <h1>COMPETENCES</h1>
+                    <h1>COMPÉTENCES</h1>
                     <h1>design</h1>
                     <ul>
                         <li>Gimp</li>
@@ -133,16 +133,16 @@
             </div>
             <div class="c-flipbook__page">
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width="100%">
-
                 <div class="texte1">
-
                     <P>HTML</P>
                     <p>CSS</p>
+                    <p>SCSS</p>
                     <p>Bootstrap</p>
-                    <p>Js</p>
+                    <p>JS</p>
                     <p>Jquery</p>
                     <p>AJAX</p>
                     <p>PHPmyadmin</p>
+                    <p>Worldpress</p>
                 </div>
             </div>
             <div class="c-flipbook__page">

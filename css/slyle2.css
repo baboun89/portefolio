@@ -80,7 +80,7 @@ input[type=submit]:hover {
 
 .texte {
     font-size: 0.6rem;
-}
+    }
 
 .texte h1 {
     font-size: 1.2rem;
@@ -98,7 +98,9 @@ input[type=submit]:hover {
 .texte p {
     margin: 0;
 }
-
+ul{
+    padding: 0;
+}
 
 .point {
     text-decoration: none;
