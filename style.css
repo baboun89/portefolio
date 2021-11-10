@@ -1,0 +1,1535 @@
+/* mobile */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 100px;
+    margin: 10px;
+
+}
+
+body {
+    background: #1D87F2;
+    overflow: hidden;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: 'roboto';
+
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+input[type=text],
+textarea,
+input[type=email] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #1255a2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #1872D9;
+}
+
+.container {
+    font-size: 0.5rem;
+    /* Ajouter box-sizing */
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* background-color:#f2f2f2; */
+    padding: 20px;
+    width: 100%;
+    /* redéfinition 400 + 2*20 */
+    max-width: 440px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger {
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger span {
+    width: 100%;
+    height: 7px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before,
+.burger span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 6px;
+    background-color: white;
+    transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before {
+    transform: translateY(-12px);
+}
+
+.burger span::after {
+    transform: translateY(14px);
+
+}
+
+.burger.active span {
+    background-color: transparent;
+}
+
+.burger.active span::before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.burger.active span::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.burger:hover span::after,
+.burger:hover span::before {
+    background-color: #f7a13c;
+}
+
+.burger:hover span {
+    background-color: #7a4621;
+}
+
+.burger.active span {
+    background-color: transparent;
+}
+
+
+.icon {
+    fill: white;
+    cursor: pointer;
+
+}
+
+.navbar input,
+.nav-menu,
+.dropdown {
+    display: none;
+}
+
+[id^=btn]:checked+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+}
+
+.nav-menu {
+    background: radial-gradient(closest-side, white, rgb(212, 211, 211));
+    align-items: center;
+
+}
+
+.nav-item a,
+.drop-item a,
+.show {
+    color: rgb(242, 28, 28);
+    font-size: 0.8rem;
+}
+
+.nav-menu a:hover,
+.show:hover,
+.icon:hover {
+    color: maroon;
+
+}
+
+
+.soleil {
+    position: absolute;
+    border-radius: 50%;
+    animation-name: animSun;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(1, .01, 0, 1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+    z-index: 24;
+
+}
+
+@keyframes animSun {
+    0% {
+        bottom: 10%;
+        left: -28%;
+    }
+
+    50% {
+        bottom: 82%;
+        left: 20%;
+
+    }
+
+    100% {
+        bottom: 10%;
+        left: 70%;
+
+    }
+}
+
+.navbar ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    justify-content: center;
+    z-index: 25;
+
+}
+
+ul li {
+    text-align: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#lo {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#logo1 {
+    display: block;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+#logo2 {
+    text-align: center;
+}
+
+#flipBook {
+    /* left: 0; */
+    /* top: 60px; */
+    z-index: 25;
+    opacity: 90%;
+
+}
+
+a:hover {
+    color: yellow;
+}
+
+.texte1 ul {
+    padding-left: 0;
+
+}
+
+.texte1 {
+    font-size: 0.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.titre h2 {
+    margin-left: 40px;
+}
+
+.c-flipbook__page::before {
+    position: static;
+}
+
+.texte {
+    width: 80%;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10%;
+}
+
+.texte h1 {
+    margin-top: 0;
+}
+
+.texte h2 {
+    font-size: 0.6rem;
+    color: black;
+    margin: 0;
+}
+
+#formulaire {
+    position: absolute;
+    bottom: -50px;
+    color: red;
+
+}
+
+h3 {
+    top: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+/* h2,
+h3 {
+    font-size: 2.2rem;
+    color: white;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin: 0;
+} */
+
+/* #fin {
+    position: absolute;
+    top: 120px;
+    font-size: 0.7rem;
+} */
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.check {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+    right: 10px;
+    z-index: 30;
+    top: 535px;
+}
+
+input[type="checkbox"]:checked~.check {
+    background: #fff;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+input[type="checkbox"]:checked~.check:before {
+    transform: translateX(-50px);
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #092c3e;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+
+}
+
+input[type="checkbox"]:checked~.check:after {
+    transform: translateX(0px);
+}
+
+
+#projectContainer {
+    background-color: #333;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 21;
+
+}
+
+#starSuperContainer {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+}
+
+#starContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#starFade {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(transparent, #333);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(transparent, #333);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(transparent, #333);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(transparent, #333);
+    /* Standard syntax */
+    position: absolute;
+    top: 0;
+}
+
+.star {
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.fireworkContainer {
+    /*width:20px;
+                  height:20px;*/
+    margin-top: -4px;
+    margin-bottom: -4px;
+    position: absolute;
+    display: inline-block;
+    -o-transition: all 1s linear, opacity 2s linear;
+    -moz-transition: all 1s linear, opacity 2s linear;
+    -webkit-transition: all 1s linear, opacity 2s linear;
+    -ms-transition: all 1s linear, opacity 2s linear;
+    transition: all 1s linear, opacity 2s linear;
+    bottom: 0;
+    border-radius: 50%;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
+    /*-webkit-box-shadow: 0 8px 6px -6px red;
+                  -moz-box-shadow: 0 8px 6px -6px red;
+                  box-shadow: 0 8px 6px -6px red;*/
+}
+
+.fireworkContainer * {
+    -o-transition: all .8s linear, opacity .1s linear;
+    -moz-transition: all .8s linear, opacity .1s linear;
+    -webkit-transition: all .8s linear, opacity .1s linear;
+    -ms-transition: all .8s linear, opacity .1s linear;
+    transition: all .8s linear, opaciyt .1s linear;
+    position: absolute;
+    width: 0;
+    height: 0;
+    -o-transform-origin: bottom center;
+    -moz-transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center;
+}
+
+#fireworksContainer {
+    position: fixed;
+    bottom: -100px;
+    display: table;
+    left: 10px;
+}
+
+* {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+}
+
+.light {
+    border-radius: 50%;
+    opacity: .4;
+    -webkit-filter: blur(40px);
+    -o-filter: blur(40px);
+    -moz-filter: blur(40px);
+    -ms-filter: blur(40px);
+    filter: blur(add=0, direction=300, strength=10);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 374px) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 82%;
+            left: 50%;
+
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
+    .texte {
+        font-size: 0.7rem;
+    }
+
+    .texte1 h1 {
+        font-size: 1rem;
+    }
+
+    .texte h2 {
+        font-size: 0.8rem;
+    }
+   .soleil{
+       transform: translateX(-50%);
+   } 
+}
+
+@media screen and (min-width: 500px) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: -30%;
+        }
+
+        25% {
+            bottom: 60%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 36%;
+        }
+
+        75% {
+            bottom: 70%;
+            left: 70%;
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
+    .texte {
+        font-size: 1rem;
+    }
+
+    .texte1 h1 {
+        font-size: 1.3rem;
+    }
+
+    .texte h2 {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+    @keyframes animSun {
+        0% {
+            bottom: 0%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 90%;
+            left: 50%;
+
+        }
+
+        100% {
+            bottom: 0%;
+            left: 100%;
+
+        }
+    }
+
+    .title {
+        font-size: 2rem;
+        color: white;
+        position: relative;
+        z-index: 5;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .nav-item a,
+    .drop-item a,
+    .show {
+        font-size: 1.3rem;
+        align-content: center;
+
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+    .texte {
+        font-size: 1.1rem;
+    }
+
+    .texte1 h1 {
+        font-size: 1.7rem;
+    }
+
+    .texte h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .texte h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    @keyframes animSun {
+        0% {
+            bottom: 0%;
+            left: 0%;
+        }
+
+        25% {
+            bottom: 50%;
+            left: 25%;
+        }
+
+        50% {
+            bottom: 90%;
+            left: 50%;
+        }
+
+        75% {
+            bottom: 50%;
+            left: 75%;
+        }
+
+        100% {
+            bottom: 0%;
+            left: 100%;
+
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    header {
+        margin: 0 10px 0 10px;
+    }
+
+    #flipBook {
+        width: 45% !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .texte {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    @keyframes animSun {
+        0% {
+            bottom: 0%;
+            left: 0%;
+        }
+
+        25% {
+            bottom: 50%;
+            left: 25%;
+        }
+
+        50% {
+            bottom: 90%;
+            left: 50%;
+        }
+
+        75% {
+            bottom: 50%;
+            left: 75%;
+        }
+
+        100% {
+            bottom: 0%;
+            left: 100%;
+
+        }
+    }
+
+    #flipBook {
+        width: 57% !important;
+    }
+
+    .texte1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .texte1 {
+        font-size: 1.5rem;
+    }
+
+    .texte h1 {
+        font-size: 2.5rem;
+    }
+
+    .texte h2 {
+        font-size: 1.7rem;
+    }
+
+    .texte {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1.5rem;
+    }
+    .check{
+        right: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* paysage */
+/* @media screen and (orientation: landscape) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: -40%;
+        }
+
+        25% {
+            bottom: 60%;
+            left: -10%;
+        }
+
+        50% {
+            bottom: 78%;
+            left: 32%;
+        }
+
+        75% {
+            bottom: 70%;
+            left: 70%;
+        }
+
+        100% {
+            bottom: 10%;
+            left: 120%;
+
+        }
+    }
+
+    header {
+        height: 30px;
+
+    }
+
+    .navbar ul {
+        width: 75%;
+        height: 50px;
+        margin-left: 80px;
+        top: -30px;
+        padding-right: 5px;
+    }
+
+    .nav-item a {
+
+        font-size: 0.8rem;
+    }
+
+    .nav-menu {
+        margin-top: 25px;
+
+    }
+
+
+    label {
+        top: 43%;
+    }
+
+    #projectContainer {
+        z-index: 23;
+    }
+
+    .title {
+        transform: translateY(20px);
+    }
+
+    .title h2 {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h2,
+    h3 {
+        display: inline;
+        z-index: 30;
+
+    }
+
+    #lo {
+        top: -50px;
+        z-index: 25;
+    }
+
+    #flipBook {
+
+        width: 55% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70px;
+
+    }
+
+    .feuilles {
+        margin-top: 0;
+        width: 85% !important;
+        margin-left: 7%;
+
+    }
+
+
+
+
+    #logo2 {
+        width: 300px;
+        height: 300px;
+        left: 150px;
+        top: 50px;
+    }
+
+    ul li {
+        margin-left: 10px;
+        list-style: none;
+    }
+
+    .check {
+        top: 280px;
+    }
+
+}
+
+@media screen and (min-width: 374px) and (orientation: portrait) {
+
+    #flipBook {
+        top: 80px;
+    }
+
+    label {
+        bottom: 100px;
+    }
+
+    #formulaire {
+        bottom: -100px;
+
+    }
+
+    .nav-item a,
+    .drop-item a,
+    .show {
+        font-size: 0.8rem;
+        margin-left: 5px;
+
+    }
+
+    .check {}
+
+    #fin {
+        top: 200px;
+    }
+
+    .texte {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 569px) and (orientation: landscape) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: -30%;
+        }
+
+        25% {
+            bottom: 60%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 36%;
+        }
+
+        75% {
+            bottom: 70%;
+            left: 70%;
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
+
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        margin-left: 80px;
+        font-size: 2rem;
+    }
+
+    h2 h3 {
+        margin-left: 100px;
+    }
+
+    .nav-item a {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 767px) and (orientation: landscape) {
+    @keyframes animSun {
+        0% {
+            bottom: -20%;
+            left: -30%;
+        }
+
+        25% {
+            bottom: 60%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 40%;
+        }
+
+        75% {
+            bottom: 70%;
+            left: 70%;
+        }
+
+        100% {
+            bottom: 10%;
+            left: 100%;
+
+        }
+    }
+
+    h3 {
+        left: 50px;
+    }
+
+    #logo2 {
+        height: 500px;
+        width: 500px;
+        left: 20%;
+    }
+
+    #flipBook {
+        width: 42% !important;
+    }
+
+    .nav-item a {
+        font-size: 1.1rem;
+    }
+
+    #fin {
+        top: 170px;
+    }
+}
+
+@media screen and (min-width: 767px) and (orientation: portrait) {
+    @keyframes animSun {
+        0% {
+            bottom: 10%;
+            left: -15%;
+        }
+
+        50% {
+            bottom: 82%;
+            left: 30%;
+
+        }
+
+        100% {
+            bottom: 10%;
+            left: 80%;
+
+        }
+    }
+
+    #soleil {
+        width: 300px;
+    }
+
+    #lo {
+        height: 800px;
+    }
+
+    .check {
+        bottom: 20px
+    }
+
+    #logo2 {
+        height: 600px;
+        width: 600px;
+        left: 10%;
+        top: 10px;
+    }
+
+    .nav-item a,
+    .drop-item a,
+    .show {
+        font-size: 1.3rem;
+        align-content: center;
+
+    }
+
+    .navbar ul {
+        height: 100px;
+    }
+
+    h3 {
+        top: 70px;
+        text-align: center;
+    }
+
+
+    h2,
+    h3 {
+        font-size: 5rem;
+    }
+
+    #flipBook {
+        width: 90% !important;
+        top: 55px;
+        left: 40px;
+    }
+
+    .texte1 {
+        font-size: 1.5rem;
+    }
+
+    .texte {
+        font-size: 1.5rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .texte h2 {
+        font-size: 1.2rem;
+    }
+
+    #geek {
+        right: 30px;
+    }
+
+    #fin {
+        top: 350px;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 1023px) and (orientation: portrait) {
+
+    #lo {
+        top: 120px;
+        height: 800px;
+    }
+
+    h2 {
+        top: 0;
+        font-size: 5rem;
+    }
+
+    h3 {
+        left: 140px;
+        font-size: 3rem;
+        top: 0
+    }
+
+    .nav-item a {
+
+        font-size: 1.7rem;
+    }
+
+
+}
+
+
+ @media screen and (min-width: 1300px) and (orientation: landscape) {
+    @keyframes animSun {
+        0% {
+            bottom: -40%;
+            left: -20%;
+        }
+
+        25% {
+            bottom: 50%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 35%;
+        }
+
+        75% {
+            bottom: 50%;
+            left: 80%;
+        }
+
+        100% {
+            bottom: -40%;
+            left: 95%;
+
+        }
+    }
+
+    [id^=btn]:checked+ul {
+        display: flex;
+    }
+
+    #logo2 {
+        height: 400px;
+        width: 400px;
+        left: 400px;
+        top: 100px;
+    }
+
+    #lo {
+        height: 1000px;
+    }
+
+    #flipBook {
+        width: 47% !important;
+        top: 90px;
+        left: 700px;
+    }
+
+    .texte {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 4.5rem;
+    }
+
+    .feuilles {
+
+        width: 200% !important;
+    }
+
+    .navbar ul {
+        width: 90%;
+        height: 100px;
+        top: -40px;
+    }
+
+    .nav-item a {
+        font-size: 2rem;
+    }
+
+    .check {
+        top: 600px;
+        right: -300px;
+    }
+}
+
+@media screen and (min-width: 1900px) and (orientation: landscape) {
+
+    @keyframes animSun {
+        0% {
+            bottom: -40%;
+            left: -20%;
+        }
+
+        25% {
+            bottom: 50%;
+            left: 0%;
+        }
+
+        50% {
+            bottom: 80%;
+            left: 35%;
+        }
+
+        75% {
+            bottom: 50%;
+            left: 80%;
+        }
+
+        100% {
+            bottom: -40%;
+            left: 95%;
+
+        }
+    }
+
+    #soleil {
+        width: 500px;
+    }
+
+    label {
+        top: 500px;
+    }
+
+    #flipBook {
+        width: 55% !important;
+        top: 140px;
+        left: 950px;
+    }
+
+
+    .texte {
+        font-size: 1.5rem;
+    }
+
+    .texte h2 {
+        font-size: 2rem;
+    }
+
+    .title h2 {
+        margin: 100px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #geek {
+        right: 45px;
+    }
+
+    h2,
+    h3 {
+        font-size: 5rem;
+    }
+
+    #logo2 {
+        height: 600px;
+        width: 600px;
+        left: 450px;
+        top: 200px;
+    }
+
+
+    .navbar ul {
+        width: 90%;
+        height: 100px;
+    }
+
+    .nav-item a {
+        font-size: 2.5rem;
+        padding-left: 40px;
+    }
+
+    .check {
+        top: 400px;
+        right: -800px;
+    }
+}
+
+ 

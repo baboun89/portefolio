@@ -11,7 +11,8 @@
     <link rel="shortcut icon" type="image/png" href="./images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">    <script src="js/flipbook.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">
+    <script src="js/flipbook.min.js" defer></script>
     <script src="js/js.js" defer></script>
 
 </head>
@@ -22,7 +23,7 @@
         <nav class="navbar">
             <a id="logo" href="indexfin.html">
                 <img id="logo1" class="rotating" src="images/logoxcf.png" alt="logo1" width="50" height="50"></a>
-                <h2>Bonne chasse au trésor!!!</h2>
+            <h2>Bonne chasse au trésor!!!</h2>
             <label for="btn" class="icon">
                 <div class="burger">
                     <span></span>
@@ -121,10 +122,10 @@
                 <img class="feuille" src="images/feuille.jpg" alt="livre" width=" 100%">
                 <div class="texte1">
                     <h1>COMPETENCES</h1>
-                    <h1>designe</h1>
+                    <h1>design</h1>
                     <ul>
                         <li>Gimp</li>
-                        <li>Inksscape</li>
+                        <li>Inkscape</li>
                         <li>Paint</li>
                     </ul>
 
@@ -137,11 +138,11 @@
 
                     <P>HTML</P>
                     <p>CSS</p>
-                    <p>bootstrap</p>
-                    <p>js</p>
-                    <p>jquery</p>
+                    <p>Bootstrap</p>
+                    <p>Js</p>
+                    <p>Jquery</p>
                     <p>AJAX</p>
-                    <p>PHPadmin</p>
+                    <p>PHPmyadmin</p>
                 </div>
             </div>
             <div class="c-flipbook__page">
@@ -172,13 +173,14 @@
             foreach ($projets as $projet) {
 
 
+                $date = new DateTime($projet['created']);
 
                 echo "
                 <div class='c-flipbook__page'>
                     <img class='feuille' src='images/feuille.jpg' alt='livre' width='100%'>
                     <div class='texte'>
                     <article>
-                    <h1>PROJET  {$projet['title']}</h1>
+                    <h1>{$projet['title']}</h1>
                     <div>
                     <img class='image' src='uploads/projets/{$projet['img']}' alt='image' width='80%'>
                     </div>
@@ -188,11 +190,10 @@
                     <div class='c-flipbook__page'>
                     <img class='feuille' src='images/feuille.jpg' alt='livre' width='100%'>
                     <div class='texte'>
-                    <h1>{$projet['title']}</h1>
                     <p>{$projet['content']}</p>
                     <a class='lien' href='{$projet['link']}'>{$projet['link']}</a>
-                        <p>créer le :{$projet['created']}</p>
-                        <p>mis à jour le :{$projet['updated']}</p>
+
+                        <p>créé le :{$date->format('d/m/Y')}</p>
                     </div>
                  </div>";
             }
@@ -214,7 +215,7 @@
             </div>
         </div>
         <div id="logo2">
-            <img  class="rotating" src="images/logosvg.png" alt="logo2">
+            <img class="rotating" src="images/logosvg.png" alt="logo2">
         </div>
     </section>
     <label>
